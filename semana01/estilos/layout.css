@@ -1,0 +1,84 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{ 
+    font-size: 14px;
+    background-color:rgb(53, 55, 55);
+    color: #fff;
+    padding: 50px;
+    padding-top: 20px;
+    
+    
+
+}
+
+.navigation{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background:#000;
+    list-style: none; /* sem bolinhas no menu.*/
+    padding: 0;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    
+    
+}
+
+.navigation a {
+    text-decoration: none; /*remover o sublinhado do menu(os links tem sublinhado)*/
+    color:#fff;
+     
+}
+
+.contanier{
+    display: flex;
+}
+
+main{
+
+    min-height: 50vb;
+    width: 960px;
+    padding: 50px;
+    background-color: rgb(151, 151, 151);
+    
+
+}
+
+aside{
+    flex: 1;
+    padding: 48px;
+    background-color: rgb(245, 245, 249);
+   
+
+}
+
+footer{
+    background-color: rgb(53, 55, 55);
+    padding: 60px;
+    color: #fff;
+    text-align: center;
+
+}
+  /* 1. position: static (padrão)
+É o padrão do navegador.
+O elemento fica exatamente onde deveria ficar, sem deslocamento.
+
+2. position: relative (o que você já usa)
+O elemento fica no lugar normal, mas você pode mover ele um pouco.
+
+3. position: absolute
+O elemento sai do fluxo da página e fica posicionado em relação ao elemento pai que tiver position: relative.
+
+4. position: fixed
+O elemento fica fixo na tela, mesmo quando você rola a página.
+
+5. position: sticky
+Mistura relative com fixed.
+Ele fica parado até chegar em um ponto, depois “gruda” na tela.
+
+*/
+
+
