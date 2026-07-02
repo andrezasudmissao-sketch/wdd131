@@ -26,6 +26,11 @@ nav ul {
     
 }
 
+nav ul li{
+    flex: 1 1 100%; /*flex-grow: 1; flex-shrink: 1; flex-basis: 100%;*/
+    text-align: center;
+}
+
 nav a{
     text-decoration: none; /*remover o sublinhado do menu(os links tem sublinhado)*/
     color:#fff;
@@ -53,6 +58,103 @@ main h1{
     font-size: 24px;
 }
 
+main h2{
+    font-size:22px;
+    background-color: #104e8b;
+    color: #fff;
+    padding:10px;
+    border-radius: 20px 20px 0 0;
+
+
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* duas colunas lado a lado */
+    gap: 10px; /* espaço entre elas */
+}
+
+main h1 {
+    grid-column: 1 / -1; /* ocupa todas as colunas (o texto fica separado e com todo espaço para ele) */
+}
+
+main h2{
+    text-align:center;
+}
+
+main strong {
+  
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    margin-left: 15px;
+   
+}
+
+   
+
+ul li {
+    margin-bottom: 10px;
+    justify-content:center;
+    
+}
+
+.me {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: center;
+    margin-left: 10px; /* Descola o texto do canto*/
+    margin-bottom: 5px;  
+    width: 600px; /*aumentei o espaço nesse contenier*/
+    
+    
+
+
+   
+}
+
+.recursos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 70px;
+    
+   
+
+}
+
+.card {
+    border: 1px solid #000; /*borda fina e preta*/
+    border-radius: 20px ; /* tudo arredondado */
+    margin-bottom:20px;
+}
+
+
+.jp {
+
+    display: flex;          /* coloca lado a lado */
+    align-items: center;    /* alinha verticalmente */
+    gap: 20px;              /* espaço entre imagem e texto */
+  
+
+}
+
+.card img{
+    width: 140px;
+    margin-right: 15px; 
+    margin-top: 10px
+}
+
+.jp img{
+    width: 200px;
+    margin-left: 15px; 
+
+}
+
+
+
 footer{
     font-family:opensans, sans-serif;
     background-color: #104e8b;
@@ -60,3 +162,16 @@ footer{
     text-align: center;
     padding: 15px;
 }
+
+
+ /*  border-radius: 20px 20px; arredonda esquerda e direita 
+ .seuElemento {
+    border-radius: 20px 20px 0 0; Arredondar somente a parte de cima
+    border-radius: 20px 20px 20px 20px; /*Arredondar todos, também posso deixar apenas 20px.*/
+/*
+    display flex: 
+    flex-grow — controla quanto o item cresce
+    flex-shrink — controla quanto ele diminui
+    flex-basis — tamanho inicial do item
+*/
+
