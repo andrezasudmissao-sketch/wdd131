@@ -13,9 +13,11 @@ body{
   font-size: 24px;
   font-weight: bold;
 }
+
 header {
-  padding: 10px;
+    padding-top: 0.2px;
 }
+
 
 header h1{
     background-color: #104e8b;
@@ -149,6 +151,9 @@ ul li {
     gap: 20px;              /* espaço entre imagem e texto */
   
 
+}
+.jp p{
+    margin-bottom:10px;
 }
 
 .card img{
