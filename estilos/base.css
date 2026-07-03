@@ -4,8 +4,16 @@
     box-sizing: border-box;
 }
 body{
-    fant-family: roboto, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
+
+#course-title {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 
 header h1{
     background-color: #104e8b;
@@ -45,7 +53,7 @@ a:hover {
 
 
 /*Estelizando o header, main e footer para que fiquem centralizados na página com um continier de 960px de largura*/
-header , main, footer {
+header , main , footer {
     width: 960px;
     margin: 0 auto;
 
@@ -55,7 +63,7 @@ main h1{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 24px;
+  
 }
 
 main h2{
@@ -65,8 +73,7 @@ main h2{
     padding:10px;
     border-radius: 20px 20px 0 0;
 
-
-
+    
 }
 
 main {
@@ -120,6 +127,7 @@ ul li {
     gap: 20px;
     align-items: center;
     margin-top: 70px;
+    margin-left: 30px; /* Descola o texto do canto*/
     
    
 
