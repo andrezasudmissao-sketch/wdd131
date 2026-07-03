@@ -68,6 +68,14 @@ header , main , footer {
     margin: 0 auto;
 
 }
+/* id dentro do header para colocar o título do curso, que é o mesmo do h1, mas com um tamanho menor e com uma cor diferente. */
+#course-title {
+    background-color: #104e8b;
+    font-size: 20px;
+    color: #fff;
+    padding: 12px;
+
+}
 
 main h1{
     text-align: center;
