@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Reboto', sans-serif; /* Google fonts */
+    font-weight: 400;
 }
 
 #course-title {
@@ -24,7 +25,12 @@ header h1{
     color: #fff;
     padding: 20px;
     text-align: center;
-    font-size: 20px;
+    font-size: 20px; 
+    
+}
+
+h1 {
+    font-weight: 100; /*A letra fica fina*/
 }
 
 /*Menu de navegação*/
@@ -120,7 +126,7 @@ ul li {
     width: 600px; /*aumentei o espaço nesse contenier*/
     
     
-    
+
 }
 
 .recursos{
