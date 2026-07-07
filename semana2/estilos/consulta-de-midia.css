@@ -1,0 +1,46 @@
+
+
+
+body{
+    font-family: 'Reboto', sans-serif; /* Google fonts */
+    font-weight: 400;
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border:1px solid #e4e2e2;
+    padding: 1rem;
+    background-color: rgb(198, 208, 252);
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    
+}
+
+section {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+/*.escritura {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.versiculo {
+    background-color: #fff;
+    padding: 20px;
+} */
+
+
+footer {
+    background-color: rgb(198, 208, 252);
+    padding: 20px;
+}
+
