@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'open sans' sans-serif ; /* Google fonts */
+    font-weight: 400;
+}
+
+figure img {
+    width: 200px;
+}
+
+/*Menu de navegação*/
+nav ul {
+    display: flex;
+    list-style: none; /* sem bolinhas no menu.*/
+    justify-content:space-around;
+    background-color: #551a8b;
+    color:#fff;
+    padding:15px;
+    
+    
+}
+
+ul li a{
+    text-decoration: none; /*remover o sublinhado do menu(os links tem sublinhado)*/
+}
+
+.info {
+    font-weight: bold;
+}
+
+
+/* 
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+    */
