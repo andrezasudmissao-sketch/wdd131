@@ -1,10 +1,22 @@
 
-@media screen and (max-width: 500px){
-   
-    main{
-        grid-template-columns: 1fr ;
+@media screen and (max-width: 500px) {
 
+    .temple {
+        grid-template-columns: 1fr; /* 1 coluna no mobile */
     }
 }
 
-/* 1 fração do espaço disponível*/
+
+
+/* 
+
+Quem é grid no seu layout é .temple, não o main.
+
+Então a media query precisa ser aplicada no elemento que realmente usa grid
+
+O que isso faz?
+Quando a tela tiver 500px ou menos, o grid muda de 3 colunas para 1 coluna.
+
+As imagens ficam uma embaixo da outra, ocupando toda a largura disponível.
+
+Isso deixa o layout responsivo e fácil de visualizar no celular.*/

@@ -1,184 +1,135 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;              /* Remove margens padrão */
+    padding: 0;             /* Remove espaçamentos padrão */
+    box-sizing: border-box; /* Faz largura incluir padding e borda */
 }
 
-
 body{
-    font-family: 'open sans', sans-serif ; /* Google fonts */
-    font-weight: 400;
+    font-family: 'open sans', sans-serif; /* Fonte principal */
+    font-weight: 400;                     /* Peso padrão */
 }
 
 header span{
-    font-size: 23px;
+    font-size: 23px; /* Tamanho do texto "Álbum do Templo" */
 }
 
-
-/*Menu de navegação*/
+/* ===========================
+   CABEÇALHO
+   =========================== */
 .together {
-    display: flex;
-    /*flex-direction:column; esse só funciona se eu quiser alinhar tudo na mesma linha*/
-    justify-content:space-around;
-    background-color: #551a8b;
-    color: #fff;
-    padding:15px;
-    
-   
+    display: flex;                 /* Coloca itens lado a lado */
+    justify-content:space-around;/* Espaço entre título, botão e menu */
+    align-items: center;           /* Alinha verticalmente */
+    background-color: #551a8b;     /* Cor do cabeçalho */
+    color: #fff;                   /* Texto branco */
+    padding: 15px;                 /* Espaçamento interno */
 }
 
- ul li a{
-    
-    color:#fff;
-    text-decoration: none; /*remover o sublinhado do menu(os links tem sublinhado)*/ /*Para remover o sublinhado tive que colocar dentro do ul*/
-    /*para deicar branco os nomes no menu tive que usar diretamente no (a)*/
-
-    transition: 0.3s ease;
-    /*0.3s → tempo da animação
-    ease → tipo de suavização (começa devagar, acelera, termina devagar)*/
-
+/* ===========================
+   BOTÃO HAMBÚRGUER
+   =========================== */
+#hamburguer {
+    display: none;     /* Some no desktop */
+    font-size: 2rem;   /* Tamanho do ícone ☰ */
+    background: none;  /* Sem fundo */
+    border: none;      /* Sem borda */
+    color: #fff;       /* Ícone branco */
+    cursor: pointer;   /* Mãozinha ao passar o mouse */
 }
 
-nav ul{
-    display: flex;
-    gap: 70px;
-    list-style: none; /* sem bolinhas no menu.*/ 
-    /*Para remover as bolinhas pretas tive que colocar diretamente no menu nav ul*/
+/* ===========================
+   MENU (DESKTOP)
+   =========================== */
+nav ul {
+    display: flex;     /* Links lado a lado */
+    gap: 40px;         /* Espaço entre os links */
+    list-style: none;  /* Remove bolinhas */
 }
 
-.active{
-    color: #9bc9fa;
-   
+ul li a {
+    color: #fff;           /* Links brancos */
+    text-decoration: none; /* Remove sublinhado */
+    transition: 0.3s ease; /* Suavização no hover */
 }
 
-/* Hover: Muda o estilo quando o mouse passa por cima
-Cria interação visual
-Pode mudar cor, fundo, tamanho, sombra, animação */  
+.active {
+    color: #9bc9fa; /* Cor do link ativo */
+}
+
 nav ul li a:hover {
-  background: #9bc9fa;
-  color: #fff;
-  border-radius: 5px;
-  padding: 8px;
-  
+    background: #9bc9fa; /* Fundo azul claro */
+    color: #fff;         /* Texto branco */
+    border-radius: 5px;  /* Bordas arredondadas */
+    padding: 8px;        /* Espaçamento interno */
 }
 
-/* Mobile View ***************/
-#menu {
-	display: block;  /*No mobile, eu mostra o hambúrguer*/
-	font-size: 2rem;
-	font-weight: 400;
-	text-decoration: none;
-	padding: 0.5rem 0.75rem;
-	color: #fff;
-}
-    
+/* ===========================
+   MOBILE (TELAS PEQUENAS)
+   =========================== */
+@media (max-width: 768px) {
 
-/*before: Ele serve para criar um conteúdo antes de um elemento, sem precisar colocar nada no HTML.*/
-#menu::before {
-	content: "≡"; /* "Hamburger. Esse é o simbolo usado no menu de navegação, pois parece um hambuguer." */
-    
-}
+    #hamburguer {
+        display: block; /* Mostra o botão no mobile */
+    }
 
-nav {
+    nav ul {
+        display: none;            /* Esconde o menu no mobile */
+        flex-direction: column;   /* Links ficam em coluna */
+        background-color: #551a8b;/* Fundo igual ao cabeçalho */
+        padding: 10px;            /* Espaçamento interno */
+        margin-top: 10px;         /* Distância do topo */
+    }
 
-    text-align: center;
-}
-
-#menu.navigation {
-    display: none; /*No desktop, o hambúrguer NÃO aparece.*/
+    nav ul.show {
+        display: flex; /* Quando o JS ativa, o menu aparece */
+    }
 }
 
-.navigation {
-	list-style: none;
-	margin: 0 auto;
-	max-width: 760px;
-}
-
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	font-weight: 700;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
-}
-
-
-.show li {
-	display: block;
-}
-
-#menu.show::before {
-	content: "X";
-}
-
-/* para mobile*/
-@media only screen and (min-width: 40em) {
-	.navigation {
-		display: flex;
-	}
-
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 100%;
-	}
-}
-
-
+/* ===========================
+   CONTEÚDO PRINCIPAL
+   =========================== */
 main h1{
-    text-align: center;
-    margin: 10px;
-    margin-top: 20px;
-    margin-right: 30px;
-    font-size: 20px;
-
+    text-align: center; /* Centraliza o título */
+    margin: 20px;       /* Espaçamento */
+    font-size: 20px;    /* Tamanho do título */
 }
-
 
 .temple {
-    display: grid;
-    grid-template-columns: auto auto auto; /* tbm posso usar: 1fr 1fr 1fr */ /*os % dizem o quanto eu quero usar de espaço dentro do grid*/ /*Para diminuir esse espaço, troque para algo mais compacto: auto*/
-    gap: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
-    
-    
-    
+    display: grid;                     /* Layout em grade */
+    grid-template-columns: auto auto auto; /* 3 colunas */
+    gap: 10px;                         /* Espaço entre imagens */
+    padding: 10px;                     /* Espaçamento interno */
+    margin-bottom: 10px;               /* Espaço abaixo */
 }
+
 .temple img{
-    width: 250px;
-    height: 170px; /* deixa as imagens do mesmo tamnaho */ 
-
-
+    width: 250px;  /* Largura fixa */
+    height: 170px; /* Altura fixa */
 }
 
- main  {
-    width: 800px;
-    margin: 0 auto;
-
+main {
+    width: 800px;   /* Largura do conteúdo */
+    margin: 0 auto; /* Centraliza na página */
 }
 
 figcaption {
-    font-size: 12px;
-    color: #551a8b;
-    text-align: center;
-    font-weight: 600; /*Negrito*/
-
-
+    font-size: 12px;     /* Tamanho do texto */
+    color: #551a8b;      /* Cor roxa */
+    text-align: center;  /* Centraliza legenda */
+    font-weight: 600;    /* Negrito */
 }
 
+/* ===========================
+   RODAPÉ
+   =========================== */
 footer {
-     background-color: #551a8b;
-     color: #fff;
-     padding: 10px;
-     text-align: center;
-     font-size: 15px;
-
+    background-color: #551a8b; /* Fundo roxo */
+    color: #fff;               /* Texto branco */
+    padding: 10px;             /* Espaçamento interno */
+    text-align: center;        /* Centraliza texto */
+    font-size: 15px;           /* Tamanho da fonte */
 }
+
 
 
 
