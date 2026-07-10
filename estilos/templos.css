@@ -21,9 +21,9 @@ header span{
     /*flex-direction:column; esse só funciona se eu quiser alinhar tudo na mesma linha*/
     justify-content:space-around;
     background-color: #551a8b;
-    margin:2px;
-    padding:15px;
     color: #fff;
+    padding:15px;
+    
    
 }
 
@@ -32,6 +32,10 @@ header span{
     color:#fff;
     text-decoration: none; /*remover o sublinhado do menu(os links tem sublinhado)*/ /*Para remover o sublinhado tive que colocar dentro do ul*/
     /*para deicar branco os nomes no menu tive que usar diretamente no (a)*/
+    transition: 0.4s ease;
+    transition: 0.3s ease;
+    /*0.3s → tempo da animação
+    ease → tipo de suavização (começa devagar, acelera, termina devagar)*/
 
 }
 
@@ -42,6 +46,87 @@ nav ul{
     /*Para remover as bolinhas pretas tive que colocar diretamente no menu nav ul*/
 }
 
+.active{
+    color: #9bc9fa;
+   
+}
+
+/* Hover: Muda o estilo quando o mouse passa por cima
+Cria interação visual
+Pode mudar cor, fundo, tamanho, sombra, animação */  
+nav ul li a:hover {
+  background: #9bc9fa;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px;
+  
+}
+
+/* Mobile View ***************/
+#menu {
+	display: block;  /*No mobile, eu mostra o hambúrguer*/
+	font-size: 2rem;
+	font-weight: 400;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	color: #fff;
+}
+    
+
+/*before: Ele serve para criar um conteúdo antes de um elemento, sem precisar colocar nada no HTML.*/
+#menu::before {
+	content: "≡"; /* "Hamburger. Esse é o simbolo usado no menu de navegação, pois parece um hambuguer." */
+    
+}
+
+nav {
+
+    text-align: center;
+}
+
+#menu {
+    display: none; /*No desktop, o hambúrguer NÃO aparece.*/
+}
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+/* para mobile*/
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+}
 
 
 main h1{
