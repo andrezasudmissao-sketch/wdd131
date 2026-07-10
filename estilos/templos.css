@@ -6,33 +6,87 @@
 
 
 body{
-    font-family: 'open sans' sans-serif ; /* Google fonts */
+    font-family: 'open sans', sans-serif ; /* Google fonts */
     font-weight: 400;
 }
 
-figure img {
-    width: 200px;
+header span{
+    font-size: 23px;
 }
+
 
 /*Menu de navegação*/
-nav ul {
+.together {
     display: flex;
-    list-style: none; /* sem bolinhas no menu.*/
+    /*flex-direction:column; esse só funciona se eu quiser alinhar tudo na mesma linha*/
     justify-content:space-around;
     background-color: #551a8b;
-    color:#fff;
+    margin:2px;
     padding:15px;
-    
-    
+    color: #fff;
+   
 }
 
-ul li a{
-    text-decoration: none; /*remover o sublinhado do menu(os links tem sublinhado)*/
+ ul li a{
+    
+    color:#fff;
+    text-decoration: none; /*remover o sublinhado do menu(os links tem sublinhado)*/ /*Para remover o sublinhado tive que colocar dentro do ul*/
+    /*para deicar branco os nomes no menu tive que usar diretamente no (a)*/
+
 }
 
-.info {
-    font-weight: bold;
+nav ul{
+    display: flex;
+    gap: 70px;
+    list-style: none; /* sem bolinhas no menu.*/ 
+    /*Para remover as bolinhas pretas tive que colocar diretamente no menu nav ul*/
 }
+
+
+
+main h1{
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+    margin-right: 30px;
+    font-size: 20px;
+
+}
+
+
+.temple {
+    display: grid;
+    grid-template-columns: auto auto auto; /* tbm posso usar: 1fr 1fr 1fr */ /*os % dizem o quanto eu quero usar de espaço dentro do grid*/ /*Para diminuir esse espaço, troque para algo mais compacto: auto*/
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+    
+    
+}
+.temple img{
+    width: 250px;
+    height: 170px; /* deixa as imagens do mesmo tamnaho */ 
+
+
+}
+
+ main  {
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+footer {
+     background-color: #551a8b;
+     color: #fff;
+     padding: 10px;
+     text-align: center;
+
+}
+
+
+
 
 
 /* 
@@ -55,3 +109,10 @@ ul li a{
     "wdth" 100;
 }
     */
+
+
+/*grid-template-rows define as linhas do seu grid — ou seja, a altura de cada linha dentro do CSS Grid.
+
+Pensa assim:
+grid-template-columns controla as colunas (largura)  
+grid-template-rows controla as linhas (altura)*/

@@ -15,14 +15,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <script src="scripts/templos.js" defer></script>
+    <script src="scripts/obterdatas.js" defer></script>
 
 </head>
 <body>
     <header>
-        <span class="info">Álbum do Templo</span>
-         <div class="menutemplo">
+        <div class="together">
+        <span>Álbum do Templo</span>
+         <div class="mytemple">
+            <a id="menu" href="#"></a>
             <nav>
-                <ul class="pagina">
+                <ul>
                     <li><a href="#">Página Inicial</a></li>
                     <li><a href="#">Antigo</a></li>
                     <li><a href="#">Novo</a></li>
@@ -31,9 +34,11 @@
                 </ul>
             </nav>
         </div>
+        </div>
     </header>
     <main>
         <h1>Página Inicial</h1>
+        <div class="temple">
         <figure>
             <img src="imagens/accra-ghana.jpg" alt="">
             <figcaption></figcaption>
@@ -70,9 +75,15 @@
                      <img src="imagens/templo-de-salt-lake.jpg" alt="">
             <figcaption></figcaption>
                 </figure>
+                </div>
     </main>
     <footer>
-        <p> &copy 🦋Andreza Gomes França da Silva🦋 Paraíba </p>
+        <p> &copy <span id="anoatual"></span>🦋Andreza Gomes França da Silva🦋 Paraíba 
+        </p>
+         <p id="ultimaModificacao"></p>
+        
     </footer>
 </body>
 </html>
+
+ 
