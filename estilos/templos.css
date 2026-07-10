@@ -77,6 +77,15 @@ main h1{
 
 }
 
+figcaption {
+    font-size: 12px;
+    color: #551a8b;
+    text-align: center;
+    font-weight: 600; /*Negrito*/
+
+
+}
+
 footer {
      background-color: #551a8b;
      color: #fff;
@@ -116,4 +125,10 @@ footer {
 
 Pensa assim:
 grid-template-columns controla as colunas (largura)  
-grid-template-rows controla as linhas (altura)*/
+grid-template-rows controla as linhas (altura)
+
+Negrito:
+font-weight: bold; → negrito padrão
+font-weight: 700; → negrito forte
+font-weight: 600; → semi‑negrito
+font-weight: normal; → remove o negrito*/
