@@ -32,7 +32,7 @@ header span{
     color:#fff;
     text-decoration: none; /*remover o sublinhado do menu(os links tem sublinhado)*/ /*Para remover o sublinhado tive que colocar dentro do ul*/
     /*para deicar branco os nomes no menu tive que usar diretamente no (a)*/
-    transition: 0.4s ease;
+
     transition: 0.3s ease;
     /*0.3s → tempo da animação
     ease → tipo de suavização (começa devagar, acelera, termina devagar)*/
@@ -84,7 +84,7 @@ nav {
     text-align: center;
 }
 
-#menu {
+#menu.navigation {
     display: none; /*No desktop, o hambúrguer NÃO aparece.*/
 }
 
