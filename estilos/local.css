@@ -1,0 +1,37 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header h1{
+    background-color: yellow;
+    text-align: center;
+    padding: 20px;
+   
+
+}
+
+.principal img {
+  width: 100%;
+  height: auto;
+}
+
+footer{
+    text-align: center;
+    background-color: #006400;
+    color:#fff;
+    padding: 20px;
+}
+
+/* que usar no html: <source srcset="imagens/principal-grande.webp" media="(min-width: 1000px)">
+               <source srcset="imagens/principal-media.webp" media="(min-width: 500px)">
+               <img src="imagens/principal-pequena.webp" alt="Bandeira do Brasil" width="500" height="250">
+Deve usar no CSS: principal img {
+  width: 100%;
+  height: auto;  
+  */

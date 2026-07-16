@@ -8,13 +8,43 @@
     <meta name="author" content="Andreza Gomes">
     <link rel="stylesheet" href="estilos/local.css">
 
-    <script src="scripts/local.js" defer=""></scriptser></script>
+    <script src="scripts/local.js" defer></script>
+    <script src="scripts/obterdatas.js" defer></script>
 </head>
 <body>
-    <Header></Header>
-    <Main>
-    </Main>
-    <footer></footer>
-    
+    <header>
+        <h1>Brasil</h1>
+    </header>
+    <main>
+         <div class="principal">
+            <picture>
+               <source srcset="imagens/principal-grande.webp" media="(min-width: 1000px)">
+               <source srcset="imagens/principal-media.webp" media="(min-width: 500px)">
+               <img src="imagens/principal-pequena.webp" alt="Bandeira do Brasil" width="500" height="250">
+            </picture>
+         </div>
+    </main>
+     <footer>
+  <p>
+    © <span id="anoatual"></span> 🏖️ Andreza Gomes 🏖️ — Brasil
+  </p>
+
+  <p id="ultimaModificacao"></p>
+</footer>
+ 
 </body>
 </html>
+
+
+
+
+
+<!--📐 Como o seu <picture> funciona
+O navegador vai escolher a primeira <source> cujo media seja verdadeiro:
+
+Tela ≥ 1000px  
+Usa: imagens/principal-grande.webp
+Tela ≥ 500px  
+Usa: imagens/principal-media.webp
+Qualquer tamanho menor que isso  
+Usa o <img> final: imagens/principal-pequena.webp-->
