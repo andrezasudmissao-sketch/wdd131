@@ -1,0 +1,57 @@
+body {
+	font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+marquee {
+	padding: 1rem;
+	background-color: #eee;
+}
+
+h1 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+h2 {
+	color: navy;
+	text-align: left;
+	grid-column: span 2 ; /*Para dizer quantas colunas o item deve ocupar, sem precisar saber o número das linhas*/
+	
+}
+
+article p {
+	text-align: justify;
+}
+
+.callout {
+	color: #fff;
+	padding: 10px;
+	background-color: #300328;
+}
+
+footer {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	font-size: smaller;
+	text-align: left;
+}
+
+/*Se você quer que um item fique sempre à esquerda e outro sempre à direita:
+
+css
+.item-esquerda {
+  grid-column: 1; /* primeira coluna }*/
+
+/*.item-direita {
+  grid-column: 2; /* segunda coluna }*/
