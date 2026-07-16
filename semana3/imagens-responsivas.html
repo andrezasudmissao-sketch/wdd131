@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos/imagens-responsivas.css">
 </head>
 <body>
     <header></header>
-    <main></main>
+    <main>
+         <div class="principal">
+            <picture>
+                  <source srcset="imagens/principal-grande.webp" media="(min-width: 1000px)">
+                  <source srcset="imagens/principal-media.webp" media="(min-width: 500px)">
+                  <img src="imagens/principal-pequeno.webp" alt="Templo de São Paulo-Brasil" width="500" height="250">
+            </picture>
+          
+        </div>
+    </main>
     <footer></footer>
     
 </body>
 </html>
+
+<!--Por que a largura e a altura da imagem são necessárias?
+Algumas das causas mais comuns de mudança ou deslocamento de layout durante a renderização de uma página são imagens, 
+anúncios, incorporações e iframes sem dimensões. "Mudanças de layout podem distrair os usuários. Imagine que você começou
+ a ler um artigo e, do nada, alguns elementos mudam de lugar na página, te confundindo e te fazendo procurar onde parou.
+  Isso é muito comum na web, inclusive ao ler notícias ou tentar clicar nos botões "Pesquisar" ou "Adicionar ao carrinho".
+   Essas experiências causam desconforto visual e muita frustração. Elas geralmente são causadas quando elementos visíveis
+    são forçados a se mover porque outro elemento foi adicionado repentinamente à página ou redimensionado."-->
