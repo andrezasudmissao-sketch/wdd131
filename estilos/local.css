@@ -19,6 +19,7 @@ header h1{
 .principal img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 footer{
@@ -34,4 +35,13 @@ footer{
 Deve usar no CSS: principal img {
   width: 100%;
   height: auto;  
-  */
+  
+  display: block é a forma mais comum e mais correta de trabalhar com imagens responsivas.
+
+Ele não muda:
+o tamanho da imagem
+o comportamento do <picture>
+os breakpoints
+a responsividade
+o layout geral
+Só remove aquele espaço indesejado.*/
