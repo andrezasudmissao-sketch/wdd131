@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Arimo', serif;
 }
 
 header h1{
@@ -69,20 +69,20 @@ section {
 
 /* Texto interno */
 section p {
-  font-size: 25px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 1.6; /*espaçamento*/
 }
 
 /* Estatísticas — lado esquerdo */
 .estatisticas {
-  top: 60px;
+  top: 70px;
   left: 50px; /* melhor que margin-left para absolute */
 }
 
 /* Clima — lado direito */
 .clima {
  
-  top: 330px;        /* mesma altura da estatísticas */
+  top: 380px;        /* mesma altura da estatísticas */
   right: 50px;      /* encosta na borda direita */
   width: 300px;     /* tamanho fixo do fundo */
   display: grid;

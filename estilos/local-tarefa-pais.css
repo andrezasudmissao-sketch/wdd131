@@ -1,0 +1,11 @@
+
+
+@media screen and (max-width: 500px) {
+
+    .principal {
+        
+        display: grid;
+        grid-template-columns: 1fr; /* 1 coluna no mobile */
+        background-color: #fff;
+    }
+}
