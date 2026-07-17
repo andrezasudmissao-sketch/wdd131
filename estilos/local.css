@@ -4,20 +4,31 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --cor-primaria: #006400;; 
+    --cor-secudaria:rgba(255, 255, 255, 0.6);
+    --cor-destaque1:#fff; 
+    --cor-destaque2:yellow; /* amarelo claro dourado*/
+    --fonte-body: 'Arimo', serif;;
+}
+
+
 body {
     font-family: 'Arimo', serif;
 }
 
 header h1{
-    background-color: yellow;
+    background-color: var(--cor-destaque2);
     text-align: center;
     padding: 20px;
    
 
 }
 
+
 .linha {
-  height: 10px;
+  height: 12px;
   background-color: #1024d9;
 }
 
@@ -46,7 +57,7 @@ section h2{
   display: block;          /* transforma o h2 em uma caixa */
   width: 300px;            /* tamanho do fundo, você pode aumentar */
   background-color: #006400;
-  color: #fff;
+  color: var(--cor-destaque1);
   font-size: 25px;         /* o texto continua do mesmo tamanho */
   padding: 10px 20px;      /* espaço interno */
   margin-left: -30px;   /*a parte verde de background-color foi para esquerda*/
@@ -62,7 +73,7 @@ section h2{
 section {
   position: absolute;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.6); /* fundo translúcido */
+  background-color: var(--cor-secudaria); /* fundo translúcido */
   padding: 20px;
   border-radius: 8px; /* deixa o fundo mais suave */
 }
@@ -79,6 +90,11 @@ section p {
   left: 50px; /* melhor que margin-left para absolute */
 }
 
+.estatisticas h2::after {  /*usando: after, coloca icone*/
+  content: "📊";
+  margin-left: 8px;   
+}
+
 /* Clima — lado direito */
 .clima {
  
@@ -87,7 +103,7 @@ section p {
   width: 300px;     /* tamanho fixo do fundo */
   display: grid;
   line-height: 1.3;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: var(--cor-secudaria);
   padding: 20px;
 }
 
@@ -104,21 +120,22 @@ section p {
 
 }
 
+
 #calcular {
    padding: 5px;
    margin-right: 96px;
   
 }
-
-
-  
+ 
 
 footer{
     text-align: center;
     background-color: #006400;
-    color:#fff;
+    color:var(--cor-destaque1);
     padding: 20px;
+  
 }
+
 
 /* que usar no html: <source srcset="imagens/principal-grande.webp" media="(min-width: 1000px)">
                <source srcset="imagens/principal-media.webp" media="(min-width: 500px)">
