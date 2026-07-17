@@ -3,9 +3,43 @@
 @media screen and (max-width: 500px) {
 
     .principal {
-        
+
         display: grid;
-        grid-template-columns: 1fr; /* 1 coluna no mobile */
-        background-color: #fff;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+    .principal img {
+       width: 100%;
+       height: auto;
+       object-fit: cover;
+    }
+
+    section {
+        position: static; /* remove o absolute */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .estatisticas,
+    .clima {
+        top: auto;
+        left: auto;
+        right: auto;
+    }
+
+    .clima 
+    {
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    section h2 {
+        margin-left: 0;
+        width: auto;
+        text-align: left;
     }
 }
+
+/*“object-fit: cover
+Preencha toda a área disponível, mesmo que precise cortar um pedaço da imagem.”*/
