@@ -16,10 +16,42 @@ header h1{
 
 }
 
+.linha {
+  height: 10px;
+  background-color: #1024d9;
+}
+
+/*[ HEADER ]
+──────────  ← minha linha (border-bottom)
+[ MAIN ]
+*/
+
+.clima { /*icone de clima*/
+  width: 50px;
+  height: 50px;
+}
+
+
 .principal img {
   width: 100%;
   height: auto;
   display: block;
+}
+section{
+  display: inline-block;
+  background-color: rgb(255,255,255 ,0.4); /* 40% transparente */
+  /*opacity: 0.5; meio transparente. opacity → deixa tudo transparente (texto também). rgba() → deixa só o fundo transparente*/
+  padding: 15px ;
+}
+
+section h2{
+
+  display: inline-block;     /* deixa a linha só no tamanho do texto */
+  padding-bottom: 8px;       /* espaço entre o texto e a linha */
+  padding-right: 3rem;       /* aumenta só para um lado */
+  background-color: #006400;
+  color: #fff;
+  font-size: 20px;
 }
 
 footer{
