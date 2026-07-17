@@ -26,10 +26,6 @@ header h1{
 [ MAIN ]
 */
 
-.clima { /*icone de clima*/
-  width: 50px;
-  height: 50px;
-}
 
 
 .principal img {
@@ -37,22 +33,79 @@ header h1{
   height: auto;
   display: block;
 }
-section{
+/*section{
  
   background-color: rgb(255,255,255 ,0.4); /* 40% transparente */
   /*opacity: 0.5; meio transparente. opacity → deixa tudo transparente (texto também). rgba() → deixa só o fundo transparente*/
-  padding: 15px ;
-}
+ /* padding: 15px ;
+} */
 
 section h2{
 
-  display: inline-block;     /* deixa a linha só no tamanho do texto */
-  padding-bottom: 8px;       /* espaço entre o texto e a linha */
-  padding-right: 3rem;       /* aumenta só para um lado */
+  
+  display: block;          /* transforma o h2 em uma caixa */
+  width: 300px;            /* tamanho do fundo, você pode aumentar */
   background-color: #006400;
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;         /* o texto continua do mesmo tamanho */
+  padding: 10px 20px;      /* espaço interno */
+  margin-left: -30px;   /*a parte verde de background-color foi para esquerda*/
+  margin-top: 10px;
+
 }
+
+.principal {
+  position: relative;
+}
+
+/* Base para todas as sections */
+section {
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.6); /* fundo translúcido */
+  padding: 20px;
+  border-radius: 8px; /* deixa o fundo mais suave */
+}
+
+/* Texto interno */
+section p {
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+/* Estatísticas — lado esquerdo */
+.estatisticas {
+  top: 60px;
+  left: 50px; /* melhor que margin-left para absolute */
+}
+
+/* Clima — lado direito */
+.clima {
+ 
+  top: 330px;        /* mesma altura da estatísticas */
+  right: 50px;      /* encosta na borda direita */
+  width: 300px;     /* tamanho fixo do fundo */
+  display: grid;
+  line-height: 1.3;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+}
+
+
+.titulo-clima {
+  display: flex;
+  width: 30px;
+  height: auto;
+  align-items: center;
+  justify-content: flex-start; /* mantém os dois juntos à esquerda */
+  gap: 4px; /* espaço mínimo entre o texto e o ícone */
+  flex-direction: row;
+ 
+
+}
+
+
+  
 
 footer{
     text-align: center;
@@ -82,3 +135,16 @@ Quando usar inline-block?
 Use quando você quer:
 
 ✔️ Colocar elementos lado a lado*/
+
+/*Como pensar para usar line-height
+Se o texto está muito “grudado”, aumente o valor.
+
+Valores comuns:
+
+1.2 → padrão
+
+1.4 → confortável
+
+1.6 → espaçado
+
+2 → bem espaçado*/

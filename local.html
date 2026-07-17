@@ -27,7 +27,6 @@
                 <img src="imagens/principal-pequena.webp" alt="Bandeira do Brasil" width="500" height="250">
             </picture>
 
-            <div class="pais">
 
                 <section class="estatisticas">
                     <h2>Brasil</h2>
@@ -39,9 +38,10 @@
                 </section>
 
                 <section class="clima">
+                     <div class="titulo-clima">
                     <h2>Clima</h2>
                     <img src="imagens/clima.svg" class="icone" alt="Ícone">
-
+                     </div> <!-- fechamento da div .titulo-clima-->
                     <p>Temperatura (°C): <input id="temp" type="number"></p>
                     <p>Velocidade do vento (km/h): <input id="vento" type="number"></p>
 
@@ -49,8 +49,6 @@
 
                     <p>Sensação térmica: <span id="resultado"></span></p>
                 </section>
-
-            </div> <!-- fechamento da div .pais -->
 
         </div> <!-- fechamento da div .principal -->
     </main>
@@ -75,4 +73,7 @@ Usa: imagens/principal-grande.webp
 Tela ≥ 500px  
 Usa: imagens/principal-media.webp
 Qualquer tamanho menor que isso  
-Usa o <img> final: imagens/principal-pequena.webp-->
+Usa o <img> final: imagens/principal-pequena.webp
+
+O elemento com relative = tabuleiro
+Os elementos com absolute = peças que você move livremente-->
