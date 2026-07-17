@@ -38,7 +38,7 @@ header h1{
   display: block;
 }
 section{
-  display: inline-block;
+ 
   background-color: rgb(255,255,255 ,0.4); /* 40% transparente */
   /*opacity: 0.5; meio transparente. opacity → deixa tudo transparente (texto também). rgba() → deixa só o fundo transparente*/
   padding: 15px ;
@@ -76,4 +76,9 @@ o comportamento do <picture>
 os breakpoints
 a responsividade
 o layout geral
-Só remove aquele espaço indesejado.*/
+Só remove aquele espaço indesejado.
+
+Quando usar inline-block?
+Use quando você quer:
+
+✔️ Colocar elementos lado a lado*/

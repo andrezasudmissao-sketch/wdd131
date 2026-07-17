@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <meta name="description" content=" Tarefa: Página do País">
+    <meta name="description" content="Tarefa: Página do País">
     <meta name="author" content="Andreza Gomes">
     <link rel="stylesheet" href="estilos/local.css">
 
@@ -15,48 +15,53 @@
     <header>
         <h1>Brasil</h1>
     </header>
-    <div class="linha"></div> <!--Criei uma linha com uma <div> separadora-->
+
+    <div class="linha"></div>
+
     <main>
-         <div class="principal">
+        <div class="principal">
+
             <picture>
-               <source srcset="imagens/principal-grande.webp" media="(min-width: 1000px)">
-               <source srcset="imagens/principal-media.webp" media="(min-width: 500px)">
-               <img src="imagens/principal-pequena.webp" alt="Bandeira do Brasil" width="500" height="250">
+                <source srcset="imagens/principal-grande.webp" media="(min-width: 1000px)">
+                <source srcset="imagens/principal-media.webp" media="(min-width: 500px)">
+                <img src="imagens/principal-pequena.webp" alt="Bandeira do Brasil" width="500" height="250">
             </picture>
 
-    <section class="estatisticas">
-      <h2>Brasil</h2>
-      <p>Idioma: <span id="idioma">Português</span></p>
-      <p>Tamanho: <span id="tamanho">8.358.140 km<sup>2</sup></span></p> <!--O <sup> está perfeito para o “2 pequeno”.-->
-      <p>População: <span id="total">213.562.666</span></p> <!--<span> para destacar valores específicos-->
-      <p>Idade Mediana: <span id="idade">35,3 anos</span></p>
-      <p>Capital: <span id="capital">Brasilia</span></p>
-    </section>
-    <section class="clima">
-       <h2>Clima</h2>
-      <img src="imagens/clima.svg" class="icone" alt="Ícone">
-      
-        <p>Temperatura (°C): <input id="temp" type="number"></p>
-        <p>Velocidade do vento (km/h): <input id="vento" type="number"></p>
+            <div class="pais">
 
-        <button id="calcular">Calcular sensação térmica</button>
+                <section class="estatisticas">
+                    <h2>Brasil</h2>
+                    <p>Idioma: <span id="idioma">Português</span></p>
+                    <p>Tamanho: <span id="tamanho">8.358.140 km<sup>2</sup></span></p>
+                    <p>População: <span id="total">213.562.666</span></p>
+                    <p>Idade Mediana: <span id="idade">35,3 anos</span></p>
+                    <p>Capital: <span id="capital">Brasilia</span></p>
+                </section>
 
-        <p>Sensação térmica: <span id="resultado"></span></p>
-       
-    </section>
-    
-         </div>
+                <section class="clima">
+                    <h2>Clima</h2>
+                    <img src="imagens/clima.svg" class="icone" alt="Ícone">
+
+                    <p>Temperatura (°C): <input id="temp" type="number"></p>
+                    <p>Velocidade do vento (km/h): <input id="vento" type="number"></p>
+
+                    <button id="calcular">Calcular sensação térmica</button>
+
+                    <p>Sensação térmica: <span id="resultado"></span></p>
+                </section>
+
+            </div> <!-- fechamento da div .pais -->
+
+        </div> <!-- fechamento da div .principal -->
     </main>
-     <footer>
-  <p>
-    © <span id="anoatual"></span> 🏖️ Andreza Gomes 🏖️ — Brasil
-  </p>
 
-  <p id="ultimaModificacao"></p>
-</footer>
- 
+    <footer>
+        <p>© <span id="anoatual"></span> 🏖️ Andreza Gomes 🏖️ — Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
 </body>
 </html>
+
 
 
 
