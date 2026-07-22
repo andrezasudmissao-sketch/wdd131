@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Times New Roman', Times, serif;
+}
+main h1 {
+    text-align: center;
+    background-color: rgb(160, 201, 245);
+    padding: 10px;
+    border: 1px solid #000;
+    
+}
+main p {
+    background-color: rgb(160, 201, 245);
+    text-align: justify;
+    padding: 8px;
+
+
+}
+
+
+img {
+    display: block;
+    margin-top: 1px;
+    animation: fade 12s; /* esse fade não faz nada sem o do @keyframes fade*/
+}
+
+
+/* O que dá efeito a imagem*/
+@keyframes fade {
+    0% {
+    opacity: 0;
+    }
+    100% { 
+        opacity: 2;
+    }
+}
+
+/* LARGURA PADRÃO DO SITE */
+header, main, footer {
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: rgb(160, 201, 245);
+    padding: 10px;
+}
