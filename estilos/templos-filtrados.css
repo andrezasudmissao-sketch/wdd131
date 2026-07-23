@@ -1,0 +1,131 @@
+*{
+    margin: 0;              /* Remove margens padrão */
+    padding: 0;             /* Remove espaçamentos padrão */
+    box-sizing: border-box; /* Faz largura incluir padding e borda */
+}
+
+body{
+    font-family: 'open sans', sans-serif; /* Fonte principal */
+    font-weight: 400;                     /* Peso padrão */
+}
+
+header span{
+    font-size: 23px; /* Tamanho do texto "Álbum do Templo" */
+}
+
+/* ===========================
+   CABEÇALHO
+   =========================== */
+.together {
+    display: flex;                 /* Coloca itens lado a lado */
+    justify-content:space-around;/* Espaço entre título, botão e menu */
+    align-items: center;           /* Alinha verticalmente */
+    background-color: #551a8b;     /* Cor do cabeçalho */
+    color: #fff;                   /* Texto branco */
+    padding: 15px;                 /* Espaçamento interno */
+}
+
+/* ===========================
+   BOTÃO HAMBÚRGUER
+   =========================== */
+#hamburguer {
+    display: none;     /* Some no desktop */
+    font-size: 2rem;   /* Tamanho do ícone ☰ */
+    background: none;  /* Sem fundo */
+    border: none;      /* Sem borda */
+    color: #fff;       /* Ícone branco */
+    cursor: pointer;   /* Mãozinha ao passar o mouse */
+}
+
+/* ===========================
+   MENU (DESKTOP)
+   =========================== */
+nav ul {
+    display: flex;     /* Links lado a lado */
+    gap: 40px;         /* Espaço entre os links */
+    list-style: none;  /* Remove bolinhas */
+}
+
+ul li a {
+    color: #fff;           /* Links brancos */
+    text-decoration: none; /* Remove sublinhado */
+    transition: 0.3s ease; /* Suavização no hover */
+}
+
+.active {
+    color: #9bc9fa; /* Cor do link ativo */
+}
+
+nav ul li a:hover {
+    background: #9bc9fa; /* Fundo azul claro */
+    color: #fff;         /* Texto branco */
+    border-radius: 5px;  /* Bordas arredondadas */
+    padding: 8px;        /* Espaçamento interno */
+}
+
+/* ===========================
+   MOBILE (TELAS PEQUENAS)
+   =========================== */
+@media (max-width: 768px) {
+
+    #hamburguer {
+        display: block; /* Mostra o botão no mobile */
+    }
+
+    nav ul {
+        display: none;            /* Esconde o menu no mobile */
+        flex-direction: column;   /* Links ficam em coluna */
+        background-color: #551a8b;/* Fundo igual ao cabeçalho */
+        padding: 10px;            /* Espaçamento interno */
+        margin-top: 10px;         /* Distância do topo */
+    }
+
+    nav ul.show {
+        display: flex; /* Quando o JS ativa, o menu aparece */
+    }
+}
+
+/* ===========================
+   CONTEÚDO PRINCIPAL
+   =========================== */
+main h1{
+    text-align: center; /* Centraliza o título */
+    margin: 20px;       /* Espaçamento */
+    font-size: 20px;    /* Tamanho do título */
+}
+
+.temple {
+    display: grid;                     /* Layout em grade */
+    grid-template-columns: auto auto auto; /* 3 colunas */
+    gap: 10px;                         /* Espaço entre imagens */
+    padding: 10px;                     /* Espaçamento interno */
+    margin-bottom: 10px;               /* Espaço abaixo */
+}
+
+.temple img{
+    width: 250px;  /* Largura fixa */
+    height: 170px; /* Altura fixa */
+}
+
+main {
+    width: 800px;   /* Largura do conteúdo */
+    margin: 0 auto; /* Centraliza na página */
+}
+
+figcaption {
+    font-size: 12px;     /* Tamanho do texto */
+    color: #551a8b;      /* Cor roxa */
+    text-align: center;  /* Centraliza legenda */
+    font-weight: 600;    /* Negrito */
+}
+
+/* ===========================
+   RODAPÉ
+   =========================== */
+footer {
+    background-color: #551a8b; /* Fundo roxo */
+    color: #fff;               /* Texto branco */
+    padding: 10px;             /* Espaçamento interno */
+    text-align: center;        /* Centraliza texto */
+    font-size: 15px;           /* Tamanho da fonte */
+}
