@@ -97,15 +97,47 @@ main h1{
 .temple {
     display: grid;                     /* Layout em grade */
     grid-template-columns: auto auto auto; /* 3 colunas */
-    gap: 10px;                         /* Espaço entre imagens */
+    gap: 15px;                         /* Espaço entre imagens */
     padding: 10px;                     /* Espaçamento interno */
     margin-bottom: 10px;               /* Espaço abaixo */
+   
 }
 
 .temple img{
     width: 250px;  /* Largura fixa */
     height: 170px; /* Altura fixa */
+    box-shadow: 0 0 20px gray; /*sombra ao redor do elemento.*/
+    border: 1px solid steelblue;
+    
 }
+
+/* Estilização do javascript,onde foram criada apenas lá para modificar aqui*/
+.name{
+    text-align: center;
+    
+
+}
+
+.card{
+    border: 1px solid #000;
+    padding: 10px;
+    background-color: #e2ecf6;
+    
+}
+
+.localizacao ,.area ,.dedicacao {
+    font-size: 12px;
+    text-align: center;
+}
+
+.area {
+    margin-bottom: 10px;
+}
+
+/* java script acima */
+
+
+
 
 main {
     width: 800px;   /* Largura do conteúdo */
@@ -113,11 +145,12 @@ main {
 }
 
 figcaption {
-    font-size: 12px;     /* Tamanho do texto */
+    font-size: 10px;     /* Tamanho do texto */
     color: #551a8b;      /* Cor roxa */
     text-align: center;  /* Centraliza legenda */
     font-weight: 600;    /* Negrito */
-}
+    
+}   /*essa parte parou de funciona pq tirei o picture e figcaption*/
 
 /* ===========================
    RODAPÉ

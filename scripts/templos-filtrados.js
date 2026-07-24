@@ -14,7 +14,10 @@ btn.addEventListener("click", () => {
 });
 
 
+
+
 const templos = [
+
   {
     nomeDoTemplo: "Accra Gana",
     localizacao: "Gana, Accra",
@@ -92,15 +95,21 @@ const templos = [
 
 ];
 
+
+
 const cutoffDate = new Date('1950-01-01');               // Define uma data limite para separar templos antigos e novos
 const largeArea = 50000;                                 // Define o valor que será usado para distinguir templos grandes e pequenos
 
 function setFiler(selector, filterFunction) {             // Função que associa um filtro a um elemento HTML (botão, link, etc.)
   const element = document.querySelector(selector);       // Seleciona o elemento na página pelo seletor CSS
 
-  element.addEventListener('click', () => {               // Adiciona um evento de clique ao elemento
-    toggleActive(element);                                // Chama uma função (não mostrada aqui) para destacar o botão ativo
-    createTempleCard(templos.filter(filterFunction));     // Aplica o filtro e recria os cartões dos templos filtrados
+  element.addEventListener('click', () => {               // Quando o usuário clicar neste elemento...
+// Chama a função que recria os cartões na tela
+// Filtra a lista de templos usando a função de filtro
+// Resultado: apenas os templos filtrados serão exibidos
+// Fim do evento de clique
+
+    createTempleCard(templos.filter(filterFunction));     
   });
 }
 
@@ -118,10 +127,20 @@ function createTempleCard(templos) {                     // Função que cria ca
 
   templos.forEach(temple => {                            // Percorre cada templo dentro do array 'templos'
     let card = document.createElement("section");         // Cria um elemento <section> para o cartão
+    card.classList.add("card");
+
     let name = document.createElement("h3");              // Cria um elemento <h3> para o nome do templo
-    let localizacao = document.createElement("p");           // Cria um elemento <p> para a localização
+    name.classList.add("name");
+
+    let localizacao = document.createElement("p");                 // Cria um elemento <p> para a localização
+    localizacao.classList.add("localizacao");                    // Cria um elemento localização para usar no css
+
     let dedicacao = document.createElement("p");         // Cria um elemento <p> para a dedicação
+    dedicacao.classList.add("dedicacao");
+
     let area = document.createElement("p");               // Cria um elemento <p> para o tamanho/área
+    area.classList.add("area")
+
     let img = document.createElement("img");              // Cria um elemento <img> para a imagem do templo
 
     name.textContent = temple.nomeDoTemplo;                 // Define o texto do nome do templo
@@ -142,4 +161,13 @@ function createTempleCard(templos) {                     // Função que cria ca
   });
 }
 
+
+/* Se quiser estilizar pelo próprio javascript sem usar o css:
+
+let localizacao = document.createElement("p");
+
+localizacao.style.color = "blue";
+localizacao.style.fontSize = "18px";
+localizacao.style.marginTop = "10px"; 
+*/
 
