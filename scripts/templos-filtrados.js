@@ -169,5 +169,12 @@ let localizacao = document.createElement("p");
 localizacao.style.color = "blue";
 localizacao.style.fontSize = "18px";
 localizacao.style.marginTop = "10px"; 
+
+
+
+A classList é uma propriedade dos elementos do DOM que permite ler, adicionar, remover e alternar classes CSS de forma simples e segura.
+Ela funciona como uma “lista de classes” aplicada ao elemento.
 */
+
+/*card.appendChild é uma ação bem simples, mas essencial: ela coloca um elemento dentro de outro elemento no DOM.*/
 
