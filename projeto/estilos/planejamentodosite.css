@@ -29,8 +29,14 @@ ul li {
 h1 ,h2 ,h3 {
     text-align: center;
 }
+.amarelo{
+    background-color: #ffcc00;
+}
 
+.cinza {
+    background-color: #f9f9f9;
+}
 footer {
     text-align: center;
-    
+
 }
