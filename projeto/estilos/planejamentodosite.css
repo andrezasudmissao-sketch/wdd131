@@ -40,3 +40,22 @@ footer {
     text-align: center;
 
 }
+
+form{
+    display: grid;
+    width: 400px;
+    margin: 0 auto;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #ffcc00;
+    
+
+}
+
+button{
+    background-color: rgb(10, 10, 131);
+    color: white;
+}
