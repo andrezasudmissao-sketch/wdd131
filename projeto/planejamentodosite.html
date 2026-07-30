@@ -35,6 +35,45 @@
 
     <main>
 
+         <form>
+            <label for="q1">1. Você faz parte de alguma religião?</label>
+            <input type="text" id="q1" name="q1" required>
+
+            <label for="q2">2.Como você se conecta com o evangelho de JESUS CRISTO?</label>
+            <textarea id="q2" name="q2" rows="4" required></textarea>
+
+            <label>3. Você lê as escrituras constantemente?</label><br>
+
+            <label for="esc_sim">
+            <input type="radio" name="escrituras" id="esc_sim" value="1">Sim</label><br> <!--radio:  Aqui o usuário pode marcar uma, duas ou todas.-->
+
+            <label for="esc_nao">
+            <input type="radio" name="escrituras" id="esc_nao" value="2">Não</label><br>
+
+            <label for="esc_asvezes">
+            <input type="radio" name="escrituras" id="esc_asvezes" value="3">Às vezes</label>
+             
+            <label for="realiza">4. Quais atividades você realiza?</label>
+
+            <label>
+            <input type="checkbox" name="atividades" value="ler"> <!--Checkbox:  Aqui o usuário pode marcar uma, duas ou todas.-->
+            Ler as escrituras
+            </label><br>
+
+            <label>
+            <input type="checkbox" name="atividades" value="orar">
+            Orar diariamente
+            </label><br>
+
+           <label>
+           <input type="checkbox" name="atividades" value="igreja">
+            Ir à igreja
+           </label>
+
+
+          <button type="submit">Enviar Questionário</button>
+        </form>
+
     <hr>
 
     <!-- Finalidade do Site -->
