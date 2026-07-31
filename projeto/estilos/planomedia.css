@@ -1,0 +1,23 @@
+@media screen and (max-width: 500px) {
+
+    form {
+       justify-self: left;
+       background-color: #fae9a4;
+        
+    }
+
+    .wireframe-box {
+
+        justify-self: left;
+
+    }
+
+    header, main, footer {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    line-height:30px;
+    background-color: #fcfbec;
+    
+}

@@ -18,8 +18,12 @@ header img{
 }
 
 .wireframe-box {
+    display: grid;
     justify-self: center
+
 }
+
+
 
 ul li {
     text-align: left;
@@ -59,3 +63,7 @@ button{
     background-color: rgb(10, 10, 131);
     color: white;
 }
+
+/* “Dentro da minha caixinha do grid, eu quero que esse item fique à esquerda, no centro ou à direita.”
+
+É isso que justify-self faz.*/
