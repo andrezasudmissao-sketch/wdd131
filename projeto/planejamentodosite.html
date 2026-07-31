@@ -39,43 +39,81 @@
     
          <form>
             
-            <label for="q1">1. Você faz parte de alguma religião?</label>
-            <input type="text" id="q1" name="q1" required>
+            <form method="get" action="avaliacao.html">
 
-            <label for="q2">2.Como você se conecta com o evangelho de JESUS CRISTO?</label>
-            <textarea id="q2" name="q2" rows="4" required></textarea>
+    <!-- PERGUNTA 1: SELECT -->
+    <label for="religiao">1. Você faz parte de alguma religião?</label>
+    <select id="religiao" name="religiao" required>
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+        <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+    </select>
 
-            <label>3. Você lê as escrituras constantemente?</label><br>
+    <!-- PERGUNTA 2: TEXTAREA -->
+    <label for="q2">2. Como você se conecta com o evangelho de JESUS CRISTO?</label>
+    <textarea id="q2" name="q2" rows="4" required></textarea>
 
-            <label for="esc_sim">
-            <input type="radio" name="escrituras" id="esc_sim" value="1">Sim</label><br> <!--radio:  Aqui o usuário pode marcar uma, duas ou todas.-->
+    <!-- PERGUNTA 3: 5 RADIOS -->
+    <label>3. Você lê as escrituras constantemente?</label><br>
 
-            <label for="esc_nao">
-            <input type="radio" name="escrituras" id="esc_nao" value="2">Não</label><br>
+    <label for="esc_1">
+        <input type="radio" id="esc_1" name="escrituras" value="sempre" required>
+        Sempre
+    </label><br>
 
-            <label for="esc_asvezes">
-            <input type="radio" name="escrituras" id="esc_asvezes" value="3">Às vezes</label>
-             
-           <label>4. Quais atividades você realiza?</label>
+    <label for="esc_2">
+        <input type="radio" id="esc_2" name="escrituras" value="frequentemente">
+        Frequentemente
+    </label><br>
 
-            <label>
-            <input type="checkbox" name="atividades" value="ler"> <!--Checkbox:  Aqui o usuário pode marcar uma, duas ou todas.-->
-            Ler as escrituras
-            </label><br>
+    <label for="esc_3">
+        <input type="radio" id="esc_3" name="escrituras" value="as_vezes">
+        Às vezes
+    </label><br>
 
-            <label>
-            <input type="checkbox" name="atividades" value="orar">
-            Orar diariamente
-            </label><br>
+    <label for="esc_4">
+        <input type="radio" id="esc_4" name="escrituras" value="raramente">
+        Raramente
+    </label><br>
 
-           <label>
-           <input type="checkbox" name="atividades" value="igreja">
-            Ir à igreja
-           </label>
+    <label for="esc_5">
+        <input type="radio" id="esc_5" name="escrituras" value="nunca">
+        Nunca
+    </label><br>
 
+    <!-- PERGUNTA 4: CHECKBOXES (4 itens) -->
+    <label>4. Quais atividades você realiza?</label><br>
 
-          <button type="submit">Enviar Questionário</button>
-        </form>
+    <label for="atv_ler">
+        <input type="checkbox" id="atv_ler" name="atividades" value="ler">
+        Ler as escrituras
+    </label><br>
+
+    <label for="atv_orar">
+        <input type="checkbox" id="atv_orar" name="atividades" value="orar">
+        Orar diariamente
+    </label><br>
+
+    <label for="atv_igreja">
+        <input type="checkbox" id="atv_igreja" name="atividades" value="igreja">
+        Ir à igreja
+    </label><br>
+
+    <label for="atv_servico">
+        <input type="checkbox" id="atv_servico" name="atividades" value="servico">
+        Serviço ao próximo
+    </label><br>
+
+    <!-- PERGUNTA 5: INPUT DATE -->
+    <label for="data_avaliacao">5. Data da avaliação:</label>  <!-- Coloca o calendário para colocar a data de nascimento-->
+    <input type="date" id="data_avaliacao" name="data_avaliacao" required>
+
+    <!-- BOTÃO -->
+    <button type="submit">Enviar Questionário</button>
+
+</form>
+
 
     <hr>
 
