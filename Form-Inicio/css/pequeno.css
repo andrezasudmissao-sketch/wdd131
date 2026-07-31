@@ -53,6 +53,74 @@ main {
 /*----------- FOOTER --------------*/
 footer {
     background-color: #ddd;
-    padding: .5rem 2%;
+    padding: .5rem 2%;  /*8px de padding em cima, 8px de padding embaixo e 2% da largura do container nas laterais*/
     text-align: center;
+}
+
+.fw1 fieldset{
+    margin: 2rem 0 ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: .5rem 2%;
+
+}
+
+.fw1 legend{
+    color: #554ba9;
+    padding: 0 .5rem;
+
+}
+
+.fw1 label{
+    display: block; /*O <label> passa a ocupar toda a largura disponível. Ele quebra linha automaticamente antes e depois. Assim o texto fica do lado esquerdo e o local para preencher do direito. Ficam lado a lado. */
+    padding: 1rem;
+    color: brown;
+    font-size: .9rem;
+}
+
+.fw1 div {
+    padding-top: 1.2rem;
+    color: #554ba9;
+    font-size:.9rem ;
+
+}
+
+.fw1 input[type="text"],      /* Campos de texto */
+.fw1 input[type="tel"],       /* Campos de telefone */
+.fw1 input[type="email"],     /* Campos de e-mail */
+.fw1 input[type="url"],       /* Campos de URL */
+.fw1 input[type="date"],      /* Campos de data */
+.fw1 input[type="number"] {   /* Campos numéricos */
+    background-color: #eee;   
+    display: block;           /* Faz o input ocupar toda a linha */
+    border: solid 1px #999;   
+    border-radius: 6px;      
+    padding: .75rem;          /* Espaçamento interno (aprox. 12px) */
+    color: #555;              /* Texto cinza médio */
+    width: 100%;              /* Ocupa toda a largura disponível */
+    max-width: 400px;         /* Limita a largura máxima a 400px */
+}
+
+.fw1 input[type="radio"],     /* Botões de opção */
+.fw1 input[type="checkbox"] { /* Caixas de seleção */
+    margin-right: 6px;        /* Espaço à direita entre os itens */
+}
+
+.fw1 input[type="submit"] {   /* Botão de envio */
+    border: none;             /* Remove a borda padrão */
+    background-image: linear-gradient(#9c2c13, #6f200e); /* Gradiente vermelho escuro */
+    color: #fff;              /* Texto branco */
+    border-radius: 6px;       /* Cantos arredondados */
+    padding: .8rem;           /* Espaçamento interno (aprox. 13px) */
+    width: 96%;               /* Quase toda a largura do container */
+    max-width: 400px;         /* Limita a largura máxima a 400px */
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #ccc;
+}.fw1 input:required{
+    border-bottom:4px solid #9c2c13;
+
+}
+
+.fw1 input:required:valid{
+    border-bottom:4px solid rgb(8, 133, 91);
 }

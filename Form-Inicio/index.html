@@ -44,13 +44,13 @@
 <main>
     <h1>Formulário de Proposta de Curso</h1>
 
-    <form method="get" action="obrigado.html"> <!-- O modelo get é usado para enviar informaçao para quem usa git. O action vai ligar esse html ao outro.-->
+    <form method="get" action="obrigado.html" class="fw1"> <!-- O modelo get é usado para enviar informaçao para quem usa git. O action vai ligar esse html ao outro.-->
         <fieldset> <!-- Divide o formulário em blocos-->
             <legend>Informações do candidato </legend> <!--O legend no HTML serve para dar um título ou descrição ao grupo de campos dentro de um <fieldset>. -->
             <Label>Nome:*<input type="text" name="nome" required></Label> <!-- Required é para que pessoa não consiga enviar até preencher esse campo obrigatório.-->
             <Label>Sobrenome:*<input type="text" name="sobrenome" required></Label>
             <Label>telefone:<input type="tel" name="numero" placeholder="83 99876-5467"></Label> <!--Placeholder: mostrar um texto dentro do input antes do usuário digitar algo-->
-            <Label>email:*<input type="email" name="email"  placeholder="anamota.doceria@gmail.com"></Label>
+            <Label>email:*<input type="email" name="email"  placeholder="anamota.doceria@gmail.com" required></Label>
             <Label>Website:<input type="url" name="url" placeholder="http://.."></Label>
         </fieldset>
 
@@ -66,9 +66,11 @@
             <label><input type="checkbox" name="processador" value="sim">Pré-processador</label>
             <label><input type="checkbox" name="cliente" value="sim">Cliente ETP</label>
 
+        </fieldset>
+
         <fieldset>
             <legend>Financiamento</legend>
-            <label>Data prevista de conclusão><input type="date" name="data"></label> <!--date: abre um espaço com um calendário para colocar data.-->
+            <label>Data prevista de conclusão<input type="date" name="data"></label> <!--date: abre um espaço com um calendário para colocar data.-->
 
             <label>Área do Curso
                 <select name="tema"> <!--O select: serve para que todas as opções fiquem dentro do mesmo espaço e a pessoa só pode escolher uma opção.-->
@@ -81,14 +83,12 @@
                     <option value="negocios">Negócios</option>
                     <option value="cibernética">Segurança Cibernética</option>
                 </select>
+            </label>
 
             <label>Quantidade de autores<input type="number" name="autores"></label>
 
-        </fieldset>
-
-        <input type="submit" value="Propor meu curso">
-
-
+       
+             <input type="submit" value="Propor meu curso">
 
         </fieldset>
 
@@ -103,3 +103,9 @@
 <script src="js/scripts.js"></script>
 </body>
 </html>
+
+<!--method="get" → envia os dados pela URL.
+
+action="obrigado.html" → ao enviar, o navegador vai para obrigado.html.
+
+class="fw1" → aplica estilos definidos no CSS para .fw1.-->
