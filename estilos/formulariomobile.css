@@ -1,0 +1,27 @@
+
+@media screen and (max-width: 500px) {
+
+    form , header {
+        width: 460px;
+        background-color:rgb(206, 222, 252);
+    }
+
+    legend, .saber, .nome, .data {
+	color:black;
+	font-size: 18px;
+	margin-top: 5px;
+    font-weight: bold; /*negrito*/
+    }
+
+    footer{
+      text-align: center;
+      margin-left: -60px;
+    }
+
+
+
+
+
+
+    
+}
