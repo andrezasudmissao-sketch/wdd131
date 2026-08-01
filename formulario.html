@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,86 +6,97 @@
     <title>WDD 131 – Fundamentos da Web Dinâmica - Andreza Gomes França da Silva</title>
     <meta name="description" content="Essa é uma página de formulário de avaliação de produto.">
     <meta name="author" content="Andreza Gomes">
-    <link rel="stylesheet" href="estilos/formulario.css">
-    <link rel="stylesheet" href="estilos/formulariomobile.css"
 
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <link rel="stylesheet" href="estilos/formulariomobile.css">
 
     <script src="scripts/formulario.js" defer></script>
     <script src="scripts/obterdatas.js" defer></script>
     <script src="scripts/nomeproduto.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
+
+
 <body>
     <header>
         <h1>Avaliação do Produto</h1>
     </header>
     
     <main>
-         <form method="get" action="avaliacao.html" class="avp">
+        <form method="get" action="avaliacao.html" class="avp">
+
             <fieldset>
-            <legend>Nome do Produto:</legend>
-             <label>
-                <select id="av" name="produto">
-                   
-                    <option disabled selected>Selecione um Produto...</option> <!--disabled e selected para ser exibido por padrão, mas não pode ser clicado pelo usuário.-->
-                    <!--Aplicar array de java scripts-->
+                <legend>Nome do Produto:</legend>
+
+             <label for="av">
+                 <select id="av" name="produto" required>
+                 <option disabled selected>Selecione um produto...</option>
+                 <!-- opções serão inseridas via JavaScript -->
                 </select>
+             </label>
 
                 <div class="geral">
-                <Legend>Classificação geral:</Legend>
-                <label>
-                <div class="stars">
-	            <input type="radio" id="estrelacinco" name="stars" value="5" required><label for="estrelacinco"></label>
-	            <input type="radio" id="estrelaquatro" name="stars" value="4" required><label for="estrelaquatro"></label>
-	            <input type="radio" id="estrelatres" name="stars" value="3" required><label for="estrelatres"></label>
-	            <input type="radio" id="estreladois" name="stars" value="2" required><label for="estreladois"></label>
-	            <input type="radio" id="estrelaum" name="stars" value="1" required><label for="estrelaum"></label>
+                    <legend>Classificação geral:</legend>
+
+                    <div class="stars">
+                        <input type="radio" id="estrelacinco" name="stars" value="5" required>
+                        <label for="estrelacinco"></label>
+
+                        <input type="radio" id="estrelaquatro" name="stars" value="4" required>
+                        <label for="estrelaquatro"></label>
+
+                        <input type="radio" id="estrelatres" name="stars" value="3" required>
+                        <label for="estrelatres"></label>
+
+                        <input type="radio" id="estreladois" name="stars" value="2" required>
+                        <label for="estreladois"></label>
+
+                        <input type="radio" id="estrelaum" name="stars" value="1" required>
+                        <label for="estrelaum"></label>
+                    </div>
+
+                    <div class="ref">
+                        <a href="https://codepen.io/nevkatz/pen/OJPBBpL" target="_blank">
+                            Caneta fonte de classificação por estrelas
+                        </a>
+                    </div>
                 </div>
-                <div class="ref"><a href="https://codepen.io/nevkatz/pen/OJPBBpL" target="_blank">Caneta fonte de classificação por estrelas</a></div>
-                </label>
-                </div>
-                
-                 <!--DATA-->
+
+                <!-- DATA -->
                 <label for="calendario" class="data">Data da avaliação:</label>
                 <input type="date" id="calendario" name="data" required>
-               
 
             </fieldset>
 
-           <fieldset>
+            <fieldset>
                 <legend>Compartilhe sua experiência:</legend>
+
                 <label><input type="checkbox" id="conforto" name="cf" value="sim">Conforto</label>
                 <label><input type="checkbox" id="boa" name="qualidade" value="sim">Boa qualidade</label>
                 <label><input type="checkbox" id="bonito" name="estiloso" value="sim">Bonito/Estiloso</label>
                 <label><input type="checkbox" id="durabilidade" name="dura" value="sim">Durabilidade</label>
                 <label><input type="checkbox" id="cores" name="bonitas" value="sim">Cores/Bonitas</label>
 
-             
-                <label for="feedback"><span class="saber">Queremos saber  sua opinião</span>:
+                <label for="feedback">
+                    <span class="saber">Queremos saber sua opinião:</span>
                 </label>
 
-
                 <textarea id="feedback" name="feedback" rows="4" placeholder="Conte-nos sobre sua experiência com o produto..."></textarea>
-            
 
-                <label for="nome"><span class="nome">Seu nome:</span></label>
+                <label for="nome">
+                    <span class="nome">Seu nome:</span>
+                </label>
                 <input type="text" id="nome" name="nome" placeholder="Escreva aqui...">
-         
 
                 <button type="submit" class="btn">Submeter avaliação</button>
-           </fieldset>
-         </form>
+            </fieldset>
+
+        </form>
     </main>
     
     <footer>
-          <p> &copy; <span id="anoatual"></span>🦋Andreza Gomes França da Silva🦋 Paraíba 
-        </p>
-         <p id="ultimaModificacao"></p>
-    </footer>
-    
-</body>
-</html>
+        <p>&copy; <span id="anoatual"></span> 🦋Andreza Gomes França da
