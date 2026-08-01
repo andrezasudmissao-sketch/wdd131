@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Fundamentos da Web Dinâmica - Andreza Gomes França da Silva</title>
+    <meta name="description" content="Essa é uma página de formulário de avaliação de produto.">
+    <meta name="author" content="Andreza Gomes">
+    <link rel="stylesheet" href="estilos/formulario.css">
+
+
+    <script src="scripts/formulario.js" defer></script>
+    <script src="scripts/obterdatas.js" defer></script>
+    <script src="scripts/nomeproduto.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!---->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Avaliação do Produto</h1>
+    </header>
+    <main>
+         <form method="get" action="avaliacao.html" class="avp">
+            <fieldset>
+            <legend>Nome do Produto:</legend>
+             <label>
+                <select id="av" name="produto">
+                   
+                    <option disabled selected>Selecione um Produto...</option> <!--disabled e selected para ser exibido por padrão, mas não pode ser clicado pelo usuário.-->
+                    <!--Aplicar array de java scripts-->
+                </select>
+
+
+                <Legend>Classificação geral:</Legend>
+                <label>
+                <div class="stars">
+	            <input type="radio" id="estrelacinco" name="stars" value="5" required><label for="estrelacinco"></label>
+	            <input type="radio" id="estrelaquatro" name="stars" value="4" required><label for="estrelaquatro"></label>
+	            <input type="radio" id="estrelatres" name="stars" value="3" required><label for="estrelatres"></label>
+	            <input type="radio" id="estreladois" name="stars" value="2" required><label for="estreladois"></label>
+	            <input type="radio" id="estrelaum" name="stars" value="1" required><label for="estrelaum"></label>
+                </div>
+                <div class="ref"><a href="https://codepen.io/nevkatz/pen/OJPBBpL" target="_blank">Caneta fonte de classificação por estrelas</a></div>
+                </label>
+                
+            
+                <label>Data de instalação<input type="date" id="calendario" name="data" required></label>
+               
+
+            </fieldset>
+
+           <fieldset>
+                <legend>Compartilhe sua experiência:</legend>
+                <label><input type="checkbox" id="conforto" name="cf" value="sim">Conforto</label>
+                <label><input type="checkbox" id="boa" name="qualidade" value="sim">Boa qualidade</label>
+                <label><input type="checkbox" id="bonito" name="estiloso" value="sim">Bonito/Estiloso</label>
+                <label><input type="checkbox" id="durabilidade" name="dura" value="sim">Durabilidade</label>
+                <label><input type="checkbox" id="cores" name="bonitas" value="sim">Cores/Bonitas</label>
+
+                 <div class="opiniao">
+                <label for="feedback">Queremos saber sua opinião:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Conte-nos sobre sua experiência com o produto..."></textarea>
+                </div>
+
+                <div class="name">
+                <label for="nome">Seu nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Escreva aqui...">
+                </div>
+
+                <button type="submit">Submeter avaliação</button>
+           </fieldset>
+         </form>
+    </main>
+    <footer>
+          <p> &copy; <span id="anoatual"></span>🦋Andreza Gomes França da Silva🦋 Paraíba 
+        </p>
+         <p id="ultimaModificacao"></p>
+    </footer>
+    
+</body>
+</html>

@@ -125,6 +125,8 @@ createTempleCard(templos);
 function createTempleCard(templos) {                     // Função que cria cartões de templos a partir de uma lista (array) de objetos
   document.querySelector(".temple").innerHTML = "";    // Limpa o conteúdo atual do contêiner com a classe "res-grid"
 
+//Essa parte foi alterada para que eu pudesse estilizar no css. 
+
   templos.forEach(temple => {                            // Percorre cada templo dentro do array 'templos'
     let card = document.createElement("section");         // Cria um elemento <section> para o cartão
     card.classList.add("card");

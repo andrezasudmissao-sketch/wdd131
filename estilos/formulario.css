@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Noto Sans', arial;
+	
+	
+}
+
+.avp input[type="text"], .avp input[type="date"], .avp textarea {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+
+
+label {
+	display: block;
+	margin-top: 5px;
+
+}
+
+
+.opiniao {
+	margin-top: 15px;
+
+}
+
+
+header, main, footer{
+	padding: 10px;
+	width: 600px;
+	margin: 0 auto;
+}
+
+h1{
+	text-align: center;
+	color:darkgreen;
+}
+
+legend {
+	color:cornflowerblue;
+	font-size: 18px;
+	margin-top: 5px;
+}
+
+fieldset {
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	background-color: rgb(249, 252, 252);
+}
+
+footer{
+	font-size: 16px;
+	text-align: center;
+}
+
+
+
+
+
+
+/* stars */
+input[type="radio"] {
+	display: none; /*Ele remove o elemento da página completamente.*/
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: #f6dc19;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #de0e0e;   /*muda cor da estrela quando passa o mousse por cima da estrela*/
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+
+/*
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+    O que isso cria na prática?
+Um sistema de avaliação com estrelas:
+
+☆ ☆ ☆ ☆ ☆ → antes de clicar
+
+★ ★ ★ ☆ ☆ → se você clicar na terceira estrela
+
+★ ★ ★ ★ ★ → se clicar na última*/

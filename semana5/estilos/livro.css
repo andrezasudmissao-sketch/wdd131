@@ -13,7 +13,8 @@ body {
 }
 
 header h1 {
-	font-size: 1.5rem;
+	font-size: 20px;
+  
 }
 
 main {
@@ -39,8 +40,8 @@ button {
 }
 
 .input {
-	display: flex;
-	gap: 1rem;
+	display: flex ;
+	gap: 2rem;
 }
 
 .list {
@@ -67,7 +68,6 @@ li {
 		width: 320px;
 	}
 }
-
 
 #favchap {
     margin: 9px;
