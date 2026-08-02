@@ -80,8 +80,13 @@ h1{
 	
 }
 
+.ref {
+	margin-bottom: 30px;
 
-legend, .saber, .nome, .data {
+}
+
+
+legend, .saber, .nome, .data, h2 {
 	color:cornflowerblue;
 	font-size: 18px;
 	margin-top: 10px;
