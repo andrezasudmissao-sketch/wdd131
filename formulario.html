@@ -74,22 +74,33 @@
 
             <fieldset>
                 <legend>Compartilhe sua experiência:</legend>
+              <div class="opcoes">
+              <input type="checkbox" id="conforto" name="cf" value="sim">
+              <label for="conforto">Conforto</label>
 
-                <label><input type="checkbox" id="conforto" name="cf" value="sim">Conforto</label>
-                <label><input type="checkbox" id="boa" name="qualidade" value="sim">Boa qualidade</label>
-                <label><input type="checkbox" id="bonito" name="estiloso" value="sim">Bonito/Estiloso</label>
-                <label><input type="checkbox" id="durabilidade" name="dura" value="sim">Durabilidade</label>
-                <label><input type="checkbox" id="cores" name="bonitas" value="sim">Cores/Bonitas</label>
+              <input type="checkbox" id="boa" name="qualidade" value="sim">
+              <label for="boa">Boa qualidade</label>
 
-                <label for="feedback">
+              <input type="checkbox" id="bonito" name="estiloso" value="sim">
+              <label for="bonito">Bonito/Estiloso</label>
+
+              <input type="checkbox" id="durabilidade" name="dura" value="sim">
+              <label for="durabilidade">Durabilidade</label>
+
+              <input type="checkbox" id="cores" name="bonitas" value="sim">
+              <label for="cores">Cores/Bonitas</label>
+              </div>
+
+
+               <label for="feedback">
                     <span class="saber">Queremos saber sua opinião:</span>
-                </label>
+               </label>
 
-                <textarea id="feedback" name="feedback" rows="4" placeholder="Conte-nos sobre sua experiência com o produto..."></textarea>
+               <textarea id="feedback" name="feedback" rows="4" placeholder="Conte-nos sobre sua experiência com o produto..."></textarea>
 
-                <label for="nome">
+               <label for="nome">
                     <span class="nome">Seu nome:</span>
-                </label>
+               </label>
                 <input type="text" id="nome" name="nome" placeholder="Escreva aqui...">
 
                 <button type="submit" class="btn">Submeter avaliação</button>

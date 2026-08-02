@@ -34,12 +34,25 @@ select {
 	border-radius: 5px;
 }
 
-label {
-	display: block;
-	margin-top: 5px;
-
-
+.opcoes { /*estilizar o checkbox*/
+  display: grid;
+  grid-template-columns: auto 1fr; /* primeira coluna: checkbox, segunda: texto */
+  align-items: center;             /* alinha verticalmente */
+  column-gap: 8px;                 /* espaço entre bolinha e texto */
+  row-gap: 8px;                    /* espaço entre linhas */
+  justify-content: start;          /* tudo alinhado à esquerda */
+  margin-bottom: 10px;              /* espaço abaixo do grupo de opções */
+  margin-top: 10px;                 /* espaço acima do grupo de opções */
 }
+
+.opcoes input[type="checkbox"] {
+  justify-self: start;             /* garante que a bolinha fique à esquerda */
+}
+
+.opcoes label {
+  justify-self: start;             /* texto encostado na bolinha */
+}
+
 
 
 .opiniao {
@@ -71,7 +84,7 @@ h1{
 legend, .saber, .nome, .data {
 	color:cornflowerblue;
 	font-size: 18px;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 fieldset {
