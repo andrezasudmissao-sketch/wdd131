@@ -53,7 +53,7 @@ const templos = [
   {
     nomeDoTemplo: "Sapporo",
     localizacao: "Sapooro - Japão",
-    dedicacao: " 2011-10-22",
+    dedicacao: "2011-10-22",
     area: 4.504,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/sapporo-japan-temple/sapporo-japan-temple-3374-main.jpg"
@@ -98,7 +98,7 @@ const templos = [
 
 
 const cutoffDate = new Date('1950-01-01');               // Define uma data limite para separar templos antigos e novos
-const largeArea = 50000;                                 // Define o valor que será usado para distinguir templos grandes e pequenos
+const largeArea = 30000;                                 // Define o valor que será usado para distinguir templos grandes e pequenos
 
 function setFiler(selector, filterFunction) {             // Função que associa um filtro a um elemento HTML (botão, link, etc.)
   const element = document.querySelector(selector);       // Seleciona o elemento na página pelo seletor CSS

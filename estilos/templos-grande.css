@@ -1,25 +1,42 @@
-
 @media screen and (max-width: 500px) {
 
+    main {
+        width: 100%; /*Imagem, ocupe no máximo a largura disponível dentro do seu container.*/
+        margin: 0 auto;
+        padding: 0 10px; /* pequeno respiro lateral */
+    }
+
     .temple {
-        grid-template-columns: 1fr; /* 1 coluna no mobile */
-        margin-right: 30px;
-        background-color: rgb(234, 213, 253);
-        
+        grid-template-columns: 1fr; /* uma coluna */
+        justify-content: center;
+        margin: 0; /* remove deslocamentos */
     }
 
-    main h1{
-        text-align: left;
+    .temple img {
+        width: 100%; /* imagem se adapta à tela */
+        height: auto;
+        max-width: 100%; /* garante que não ultrapasse */
+        box-shadow: 0 0 10px gray; /* sombra mais leve */
     }
 
-    .temple img{
-       width: 400px;  /* Largura fixa */
-       height: 230px; /* Altura fixa */
-      
-       
+     #hamburguer {
+        display: block /*Aparece no Mobile*/
     }
 
+    nav ul {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    footer{
+        margin-top: 20px;
+    }
 }
+
 
 
 
