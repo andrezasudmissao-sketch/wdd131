@@ -3,7 +3,8 @@
 
     .temple {
         grid-template-columns: 1fr; /* 1 coluna no mobile */
-        margin-right: 330px;
+        margin-right: 30px;
+        background-color: rgb(234, 213, 253);
         
     }
 
@@ -12,8 +13,9 @@
     }
 
     .temple img{
-       width: 450px;  /* Largura fixa */
-       height: 290px; /* Altura fixa */
+       width: 400px;  /* Largura fixa */
+       height: 230px; /* Altura fixa */
+      
        
     }
 

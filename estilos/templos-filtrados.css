@@ -4,6 +4,10 @@
     box-sizing: border-box; /* Faz largura incluir padding e borda */
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body{
     font-family: 'open sans', sans-serif; /* Fonte principal */
     font-weight: 400;                     /* Peso padrão */
@@ -67,23 +71,16 @@ nav ul li a:hover {
    MOBILE (TELAS PEQUENAS)
    =========================== */
 @media (max-width: 768px) {
-
-    #hamburguer {
-        display: block; /* Mostra o botão no mobile */
+    .temple {
+        grid-template-columns: 1fr 1fr; /* 2 colunas no mobile */
     }
 
-    nav ul {
-        display: none;            /* Esconde o menu no mobile */
-        flex-direction: column;   /* Links ficam em coluna */
-        background-color: #551a8b;/* Fundo igual ao cabeçalho */
-        padding: 10px;            /* Espaçamento interno */
-        margin-top: 10px;         /* Distância do topo */
-    }
-
-    nav ul.show {
-        display: flex; /* Quando o JS ativa, o menu aparece */
+    .temple img {
+        width: 100%; /* imagem se adapta */
+        height: auto;
     }
 }
+
 
 /* ===========================
    CONTEÚDO PRINCIPAL
@@ -142,6 +139,7 @@ main h1{
 main {
     width: 800px;   /* Largura do conteúdo */
     margin: 0 auto; /* Centraliza na página */
+    width: 100%;      /* Largura total no mobile */
 }
 
 figcaption {
@@ -162,3 +160,4 @@ footer {
     text-align: center;        /* Centraliza texto */
     font-size: 15px;           /* Tamanho da fonte */
 }
+
