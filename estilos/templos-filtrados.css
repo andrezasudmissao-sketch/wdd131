@@ -97,9 +97,9 @@ main h1{
 .temple {
     display: grid;                     /* Layout em grade */
     grid-template-columns: auto auto auto; /* 3 colunas */
-    gap: 15px;                         /* Espaço entre imagens */
-    padding: 10px;                     /* Espaçamento interno */
+    gap: 10px;                         /* Espaço entre imagens */
     margin-bottom: 10px;               /* Espaço abaixo */
+    justify-content: center;
    
 }
 

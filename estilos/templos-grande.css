@@ -3,8 +3,23 @@
 
     .temple {
         grid-template-columns: 1fr; /* 1 coluna no mobile */
+        margin-right: 330px;
+        
     }
+
+    main h1{
+        text-align: left;
+    }
+
+    .temple img{
+       width: 450px;  /* Largura fixa */
+       height: 290px; /* Altura fixa */
+       
+    }
+
 }
+
+
 
 
 
