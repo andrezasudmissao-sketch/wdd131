@@ -22,7 +22,7 @@ const templos = [
     nomeDoTemplo: "Accra Gana",
     localizacao: "Gana, Accra",
     dedicacao: "2001-11-16",
-    area: 1.626,
+    area: 1626,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-13760-main.jpg"
   },
@@ -30,7 +30,7 @@ const templos = [
     nomeDoTemplo: "Teresina",
     localizacao: "Piuaí - Brasil ",
     dedicacao: "2026-04-18",
-    area: 2.362,
+    area: 2362,
     imageUrl:
    "https://churchofjesuschristtemples.org/assets/img/temples/teresina-brazil-temple/teresina-brazil-temple-45009-main.jpg"
   },
@@ -38,7 +38,7 @@ const templos = [
     nomeDoTemplo: "Recife",
     localizacao: "Pernanbuco - Brasil",
     dedicacao: "1996-11-11",
-    area: 3.456,
+    area: 3456,
     imageUrl:
    "https://churchofjesuschristtemples.org/assets/img/temples/recife-brazil-temple/recife-brazil-temple-36778-main.jpg"
   },
@@ -46,7 +46,7 @@ const templos = [
     nomeDoTemplo: "Califonia",
     localizacao: "California - Estados Unidos",
     dedicacao: "1951-09-02",
-    area: 17.709,
+    area: 17709,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/los-angeles-california-temple/los-angeles-california-temple-38945-main.jpg"
   },
@@ -54,7 +54,7 @@ const templos = [
     nomeDoTemplo: "Sapporo",
     localizacao: "Sapooro - Japão",
     dedicacao: "2011-10-22",
-    area: 4.504,
+    area: 4504,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/sapporo-japan-temple/sapporo-japan-temple-3374-main.jpg"
   },
@@ -62,7 +62,7 @@ const templos = [
     nomeDoTemplo: "João Pessoa",
     localizacao: "João Pessoa - Paraíba",
     dedicacao: "2028-02-12",
-    area:  1.751,
+    area:  1751,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/joao-pessoa-brazil-temple/joao-pessoa-brazil-temple-50370-main.jpg"
   },
@@ -70,7 +70,7 @@ const templos = [
     nomeDoTemplo: "Salt Lake City",
     localizacao: "Salt Lake - Estados Unidos",
     dedicacao: "1853-01-14",
-    area: 35.508,
+    area: 35508,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
   },
@@ -79,7 +79,7 @@ const templos = [
     nomeDoTemplo: "Gilbert",
     localizacao: "Arizona - Estados Unidos",
     dedicacao: "2010-11-13",
-    area: 7.927,
+    area: 7927,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/gilbert-arizona-temple/gilbert-arizona-temple-3802-main.jpg"
   },
@@ -88,7 +88,7 @@ const templos = [
     nomeDoTemplo: "Samoa",
     localizacao: "Samoa - Apia",
     dedicacao: "1981-02-19",
-    area: 1.736,
+    area: 1736,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/apia-samoa-temple/apia-samoa-temple-13905-main.jpg"
   },
@@ -99,6 +99,7 @@ const templos = [
 
 const cutoffDate = new Date('1950-01-01');               // Define uma data limite para separar templos antigos e novos
 const largeArea = 30000;                                 // Define o valor que será usado para distinguir templos grandes e pequenos
+
 
 function setFiler(selector, filterFunction) {             // Função que associa um filtro a um elemento HTML (botão, link, etc.)
   const element = document.querySelector(selector);       // Seleciona o elemento na página pelo seletor CSS
