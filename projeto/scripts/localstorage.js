@@ -3,26 +3,33 @@
 //chamar sua função dentro do submit
 //mostrar o alerta dentro do submit, não dentro da função
 
-const form = document.querySelector(".form-oracao");
+document.addEventListener("DOMContentLoaded", function() {
 
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
+    const form = document.querySelector(".form-oracao");
 
-    salvarinformacoes();
+    // Se o formulário não existir, o JS simplesmente não roda
+    if (!form) return;
 
-    alert("Informações salvas com sucesso!");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        salvarinformacoes();
+
+        alert("Informações salvas com sucesso!");
+    });
+
+    function salvarinformacoes () {
+        let nome = document.getElementById("nome").value;
+        let motivo = document.getElementById("motivo").value;
+
+        let informacoes = {
+            nome: nome,
+            motivo: motivo
+        };
+
+        localStorage.setItem("informacoes", JSON.stringify(informacoes));
+    }
+
 });
 
 
-function salvarinformacoes () {
-    let nome = document.getElementById("nome").value;
-    let motivo = document.getElementById("motivo").value;
-
-    let informacoes = {
-        nome: nome,
-        motivo: motivo
-    };
-
-    localStorage.setItem("informacoes", JSON.stringify(informacoes));
-    
-}
