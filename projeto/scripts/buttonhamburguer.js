@@ -1,5 +1,6 @@
+
 const btn = document.getElementById("hamburguer"); // botão ☰
-console.log("btn:", btn);
+
 const menu = document.querySelector("#menu"); // UL do menu
 
 btn.addEventListener("click", () => {

@@ -1,0 +1,42 @@
+
+
+@media screen and (max-width: 500px) {
+
+    main {
+        width: 100%; /*Imagem, ocupe no máximo a largura disponível dentro do seu container.*/
+        margin: 0 auto;
+      
+    }
+     #hamburguer {
+        display: flex; /*Você mostrou o botão no mobile*/    
+    
+        
+    }
+
+    nav ul {
+        display: none; /*desaparece o menu no mobile*/
+        line-height: 30px;
+        
+
+    }
+    nav ul li a:hover { 
+    background: #a3a7a6; /* Fundo azul claro */
+    border: 2px solid #000 ; /* A borda vai aparecer quando passar o mousse em cima do menu*/
+    border-radius: 20px;  /* Bordas arredondadas */
+    padding: 8px;        /* Espaçamento interno */
+}
+
+    #menu.show ul {
+    display: block;
+   } 
+
+
+    .card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    footer{
+        margin-top: 20px;
+    }
+}

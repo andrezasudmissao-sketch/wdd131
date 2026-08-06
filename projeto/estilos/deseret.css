@@ -158,6 +158,10 @@ form button:hover {
     cursor: pointer;   /* Mãozinha ao passar o mouse */
 }
 
+#menu.show {
+  display: block;
+}
+
 nav ul {
     display: flex;     /* Links lado a lado */
     gap: 60px;         /* Espaço entre os links */
