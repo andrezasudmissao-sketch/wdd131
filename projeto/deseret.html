@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site | Deseret Connect</title>
+    <link rel="stylesheet" href="estilos/deseret.css">
+    <link rel="stylesheet" href="estilos/deseret-media.css">
+
+    <script src="scripts/datahora.js" defer></script>
+    <script src="scripts/deseret-array.js" defer></script>
+    <script src="scripts/buttonhamburguer.js" defer></script>
+  
+    
+   
+    <!--Fonts google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+</head>
+
+<body>
+
+    
+    <header>  
+       <div class="cabecalho">
+            <!-- Botão hamburguer (aparece só no celular) -->
+        <button id="hamburguer">☰</button>
+
+             <nav id="menu">
+                <ul>
+                    <li><a href="#" class="active">Página Inicial</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Nosso Blogger</a></li>
+                    <li><a href="#">Nossa Loja</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        
+    </header>
+    <main>
+  <div class="hero">
+        <picture>
+                <source srcset="imagens/hero-logo-grande.webp" media="(min-width: 1000px)">
+                <source srcset="imagens/hero-logo-media.webp" media="(min-width: 500px)">
+                <img src="imagens/hero-logo-pequena.webp" alt="Bandeira do Brasil" width="500" height="250">
+            </picture>
+        </div>
+
+        <section>
+    <div class="conexao">
+        <h1>Conectando você a Jesus Cristo!</h1>
+    </div>
+
+    <div class="conjunto">
+        
+  <!-- Teve que coloca uma div em cada conjunto para deixar organizado-->
+        <!-- Caminho 1: Oração -->
+        <div class="item">
+            <figure>
+                <img src="imagens/oracao.jpg" alt="Espaço para pedir sua oração diária.">
+                <figcaption>Oração</figcaption>
+            </figure>
+
+            <form action="mailto:deseretconnect.oficial@gmail.com" method="post" enctype="text/plain" class="form-oracao">
+                <label for="nome">Compartilhe conosco: por quem devemos orar hoje e o que está em seu coração:</label>
+                <input type="text" id="nome" name="Nome" required>
+
+                <label for="motivo">Motivo da oração:</label>
+                <textarea id="motivo" name="Motivo" rows="4" required></textarea>
+
+                  <button><input type="submit" value="Submeter Pedido de Oração"></button>
+            </form>
+        </div>
+
+        <!-- Caminho 2: Escrituras -->
+        <div class="item">
+            <figure>
+                <img src="imagens/escrituras.jpg" alt="Espaço para aprender sobre o evangelho">
+                <figcaption>Escrituras</figcaption>
+            </figure>
+
+            <a href="https://play.google.com/store/apps/details?id=org.lds.ldssa" class="btn-download">
+                Baixe o Aplicativo Biblioteca do Evangelho
+            </a>
+
+            <p>
+                Aprofunde-se na Palavra de Deus e descubra ensinamentos que transformam vidas.
+                Aqui você encontra devocionais, estudos das escrituras sagradas, discursos dos profetas,
+                ensinamentos dos líderes gerais e locais — tudo para fortalecer sua fé.
+            </p>
+        </div>
+
+        <!-- Caminho 3: Comunidade -->
+        <div class="item">
+            <figure>
+                <img src="imagens/comunidade.jpg" alt="Espaço para mensagens edificantes e amigos.">
+                <figcaption>Comunidade</figcaption>
+            </figure>
+
+            <p>
+                Nossa missão é estar perto de você todos os dias, oferecendo palavras de esperança,
+                estudos bíblicos, reflexões e um espaço seguro para compartilhar pedidos de oração.
+                Por isso, criamos comunidades em diferentes plataformas, para que você possa se conectar
+                da forma que for mais confortável.
+            </p>
+
+            <ul>
+                <li><strong>📖 Blogger:</strong> Devocionais e estudos.</li>
+                <li><strong>📸 Instagram:</strong> Inspiração diária.</li>
+                <li><strong>💬 WhatsApp:</strong> Oração e comunhão.</li>
+                <li><strong>👥 Facebook:</strong> Testemunhos e aprendizado.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+        <section id="mensagens"> 
+
+            <p>Presidente Oaks ensinou: "De fato, Jesus Cristo é o caminho para a paz neste mundo e a vida eterna no mundo que está por vir.
+              Ele conhece e ama cada um de nós perfeitamente nos convida a caminhar com Ele, permanecer nele e seguir
+              Seu exemplo de ministrar aos outros um a um, com caridade e amor. Que todos demonstremos o amor puro de Cristo
+              em nossas famílias, em nossas comunidades e em todas as nossas interações com os filhos de Deus."
+            </p>
+        </section>
+
+       <section id="sobre">
+    <h4>Nosso Livro</h4>
+    <h4>Por Cláudio França</h4>
+    <p><strong>Senhor, Salva-me!</strong> — Superando As Tempestades Espirituais Em Sua Vida</p> <!--<b> = só deixa em negrito (visual) <strong> = indica que o texto é importante (semântico + visual)-->
+    <p>"Na jornada de nossa vida, cada um enfrentará tempestades metafóricas, até mesmo tempestades terríveis, 
+       ventos ferozes e ondas montonhosas. Nós precisamos ser bons construtores de barcos fortes que possam 
+       resistir às tempestades e que nos levem aonde precisamos ir. Neste livro, compartilharei seis maneiras
+       de sermos melhores construtores de barcos e navegadores no mar da vida."  
+       — <em>Cláudio França</em>
+    </p>
+    <img src="imagens/meulivro.jpg" alt="O livro Senhor, Salva-me escrito por Cláudio França">
+    
+    <a href="https://wa.me/qr/TWAPBREJPXKPJ1">Aperte Aqui!</a>
+</section>
+    </main>
+
+    <footer>
+        <p>
+    © <span id="anoatual"></span> Andreza Gomes França — Brasil
+  </p>
+
+  <p id="ultimaModificacao"></p>
+
+        <div class="minhasredes">
+            <a href="https://www.facebook.com/share/g/1DLFbZNhHv/">
+                <img src="imagens/face.png" alt="Facebook Deseret Connect">
+            </a>
+            <a href="https://www.blogger.com/u/1/blog/posts/8341490672442106200?hl=en&tab=jj">
+                <img src="imagens/blog.webp" alt="Blog Deseret Connect">
+            </a>
+            <a href="https://www.instagram.com/deseretconnect?igsh=eHM2cjYzZjZycnFh">
+                <img src="imagens/insta.jpg" alt="Instagram Deseret Connect">
+            </a>
+        </div>
+    </footer>
+   
+</body>
+</html>
+
+
+
+<!--
+Cometários importantes sobre a estrutura HTML:
+h1 → título principal da página
+h2 → seções importantes
+h3 → subseções dentro do h2
+h4 → detalhes dentro do h3
+h5 → detalhes menores dentro do h4
+h6 → nível mais baixo, quase nunca usado.
+
+
+O elemento <img> é usado para incorporar imagens em páginas da web. Ele é essencial para melhorar o design 
+e a aparência de um site. Este elemento é vazio, ou seja, não possui uma tag de fechamento, e requer pelo menos dois
+ atributos obrigatórios: src (caminho da imagem) e alt (texto alternativo).
+ 
+<figure>
+Define um bloco independente de conteúdo ilustrativo.
+Pode conter uma imagem, vídeo, gráfico ou outro elemento visual.
+É usado para dar contexto sem quebrar a estrutura semântica da página.
+
+<figcaption>
+É o título ou legenda da figura.
+Deve estar dentro da tag <figure>, geralmente logo após o elemento visual.
+Serve para explicar ou complementar o conteúdo da figura.
+
+display: none; → some os h(h1-h6) completamente, como se não existisse na página. 
+visibility: hidden; → fica invisível, mas ainda ocupa espaço.
+
+Formulário: serve para coletar dados do usuário (nome, e-mail, mensagem, login, etc.)
+-cria conta
+-faz login
+-compra algo
+-envia mensagem
+-pesquisa
+
+participa.
+CTA: é um botão de ação.
+baixar aplicativo
+-abrir link
+-acessar página
+-assistir vídeo
+-comprar
+-se inscrever
+
+cores gradientes:
+Se quiser o amarelo dominando mais, pode ajustar assim:
+css
+background: linear-gradient(135deg, #ffcc00 0%, #332200 70%, #000000 100%);
+Amarelo bem forte, preto só no final
+css
+background: linear-gradient(135deg, #ffcc00 0%, #000000 95%);
+Amarelo ouro dominando quase tudo
+css
+background: linear-gradient(135deg, #ffcc00 0%, #332200 90%, #000000 100%);
+Amarelo ainda mais suave e luminoso
+css
+background: linear-gradient(135deg, #ffcc00 0%, #ffe066 85%, #000000 100%);
+
+<marquee behavior="alternate" direction="right"><br>Bem vindo ao Deseret Connect</marquee>  deixa o texto em movimento.
+O elemento marquee não é compatível com HTML5 e é considerado obsoleto (descontinuado), embora possa ser renderizado pela maioria dos
+navegadores. Em termos de design e usabilidade, o marquee não é bom porque é imprevisível e causa distração. Também não é acessível
+a usuários com deficiência.
+
+grid-column-start é uma propriedade do CSS Grid que define em qual linha de coluna o elemento começa dentro do grid.
+grid-column-start escolhe a linha onde o item vai começar.
+
+--
