@@ -6,22 +6,23 @@
 const form = document.querySelector(".form-oracao");
 
 form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Impede o envio do formulário
+    event.preventDefault();
 
-    salvarinformacoes(); // Chama a função para salvar as informações no localStorage
+    salvarinformacoes();
 
-    alert("Informações salvas com sucesso!"); // Mostra o alerta de sucesso
+    alert("Informações salvas com sucesso!");
 });
 
 
 function salvarinformacoes () {
     let nome = document.getElementById("nome").value;
     let motivo = document.getElementById("motivo").value;
+
     let informacoes = {
         nome: nome,
         motivo: motivo
     };
-    localStorage.setItem("informacoes", JSON.stringify(informacoes));
 
-   
+    localStorage.setItem("informacoes", JSON.stringify(informacoes));
+    
 }
