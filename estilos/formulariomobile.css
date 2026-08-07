@@ -3,6 +3,9 @@
 
      header, main, footer{
         width: 100%;
+        max-width: 100%;
+        margin:0 ;
+        padding: 10px;
         background-color:rgb(206, 222, 252);
     }
 
