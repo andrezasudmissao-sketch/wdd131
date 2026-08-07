@@ -2,26 +2,24 @@
 @media screen and (max-width: 500px) {
 
     form , header {
-        width: 460px;
+        width: 100%;
         background-color:rgb(206, 222, 252);
     }
 
     legend, .saber, .nome, .data {
-	color:black;
-	font-size: 18px;
-	margin-top: 5px;
-    font-weight: bold; /*negrito*/
+	  color:black;
+	  font-size: 18px;
+	  margin-top: 5px;
+      font-weight: bold; /*negrito*/
     }
 
     footer{
       text-align: center;
-      margin-left: -60px;
+      
     }
 
+    html, body {
+    overflow-x: hidden;
+   }
 
-
-
-
-
-    
 }
