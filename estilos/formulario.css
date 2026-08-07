@@ -15,8 +15,7 @@ body {
 .avp input[type="text"], .avp input[type="date"], .avp textarea {
 	width: 100%;
 	padding: 8px;
-	margin-bottom: 10px;
-	
+    margin: 5px 0;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 }
@@ -77,12 +76,14 @@ h1{
 	background-color:beige;
 	border: 1px solid #ccc;
 	border-radius: 5px;
+	margin-bottom: -15px;
+	
 	
 	
 }
 
 .ref {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 
 }
 
@@ -95,7 +96,7 @@ legend, .saber, .nome, .data, h2 {
 
 fieldset {
 	padding: 10px;
-	margin: 10px;
+    margin: 10px;
 	border-radius: 5px;
 	background-color:beige;
 }
@@ -114,6 +115,7 @@ fieldset {
 footer{
 	font-size: 12px;
 	text-align: center;
+    margin-top: -10px;
 	
 
 }

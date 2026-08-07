@@ -1,7 +1,7 @@
 
 @media screen and (max-width: 500px) {
 
-    form , header {
+    form , header, main, footer{
         width: 100%;
         background-color:rgb(206, 222, 252);
     }
@@ -13,9 +13,7 @@
       font-weight: bold; /*negrito*/
     }
 
-    .avp{
-        max-width: 100%;
-    }
+
 
     footer{
       text-align: center;
