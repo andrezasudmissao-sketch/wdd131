@@ -1,0 +1,164 @@
+* {
+    margin: 0; /*Remove todas as margens externas padrão dos elementos.*/
+    padding: 0; /*Remove todo o espaçamento interno padrão dos elementos.*/
+    box-sizing: border-box; /*O tamanho sempre será exatamente o que você definiu.*/
+}
+
+.history{
+    display: flex; /*texto e imagem lado a lado*/
+    justify-content:space-between; /* coloca espaço ENTRE os itens, empurrando o primeiro para a esquerda e o último para a direita.*/
+    align-items: center;
+    flex-direction: row-reverse; /*a imagem muda de lugar com o texto*/
+    gap: 20px;
+    padding: 10px;
+    background: #ffffff; /* fundo do retângulo */
+    border-radius: 12px; /* cantos arredondados */
+    border: 1px solid #ffcc00; /* borda amarela */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* sombra suave */
+    max-width: 80rem; /*tamanho total do espaço dentro da borda*/
+    margin: 40px auto; /* centraliza o retângulo */
+}
+
+/* //A imagem no header// */
+main img {
+  
+    width: 300px;
+    margin-right: 20px;
+  
+}
+main p {
+    font-size: 18px;
+    margin: 15px;
+    padding: 60px;
+    line-height: 1.4; /*espaçamento*/
+    text-align: justify;  /*Como justificar o texto*/
+    
+}
+
+
+
+
+body h1{
+    background-color: #ffcc00;
+    text-align: center;
+    font-family: 'opens sans', 'Arial Narrow Bold', sans-serif;
+    padding:15px;
+    font-size: 18px;
+}
+
+
+
+
+nav ul {
+    display: flex;     /* Links lado a lado */
+    gap: 60px;         /* Espaço entre os links */
+    list-style: none;  /* Remove bolinhas */
+    justify-content: center; /*centraliza o texto*/
+    margin: 40px;
+    
+
+}
+
+.cabecalho{
+    background: #000; /* fundo amarelo */
+    padding: 0; /*espaço interno do Menu*/
+    border-radius: 8px;
+    border: 2px solid #000; /* borda preta */
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600; /*negrito*/
+    display: block;
+    transition: 0.3s;
+    
+}
+
+ul li a {
+    color: #fff;           /* Links brancos */
+    text-decoration: none; /* Remove sublinhado */
+    transition: 0.3s ease; /* Suavização no hover */
+}
+
+.active {
+    color: #ffcc00; /* Cor do link ativo */
+}
+/* O active dar cor a o elemento escolhido.*/
+
+nav ul li a:hover { 
+    background: #ffcc00; /* Fundo azul claro */
+    color: #000;         /* Texto branco */
+    border: 2px solid #000 ; /* A borda vai aparecer quando passar o mousse em cima do menu*/
+    border-radius: 20px;  /* Bordas arredondadas */
+    padding: 8px;        /* Espaçamento interno */
+}
+
+li a {
+    background-color: var(--cor-destaque3);
+    text-decoration: none; /*remove o sublinhado*/
+    color: var(--cor-destaque4);
+    border: 2px solid var(--cor-destaque4);
+    padding: 10px;
+    margin: -6px;
+    font-size: 16px;
+    
+}
+
+
+
+
+
+
+/* o hover no CSS é aquele efeito que acontece quando o mouse passa por cima de um elemento.
+É como se o elemento “ganhasse vida” quando o usuário interage com ele.*/
+
+h2 {
+   
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top:10px;
+    margin-top: 20px;
+    
+
+}
+
+footer{
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 15px;
+}
+
+/* // Minhas Redes // */
+.minhasredes {
+    display: flex;
+    justify-content: center;
+    gap: 12px;  /*Define um espaço de 12px entre os ícones.*/
+    margin-top: 10px;
+    align-items: center;
+    background-color:#ffcc00 ;
+    padding: 10px 0 0 5px;
+}
+
+
+.minhasredes a {
+    text-decoration: none;
+    background-color: transparent; /*remove o fundo branco*/
+    border: none; /*remove a borda*/
+}
+
+.minhasredes img {
+    width: 32px;
+    height: 32px;
+    clip-path: circle(50%); /*formato circular*/
+
+}
+
+.minhasredes a {
+    text-decoration: none;
+}
+
+/* Deixar o texto mais elegante com indentação:
+text-indent: 20px;
+
+10rem ≈ 160px
+20rem ≈ 320px
+40rem ≈ 640px
+80rem ≈ 1280px (quase o seu 1300px)*/
