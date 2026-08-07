@@ -1,35 +1,39 @@
-//pegar o formulário
+//pegar o formul�rio
 //escutar o evento submit
-//chamar sua função dentro do submit
-//mostrar o alerta dentro do submit, não dentro da função
+//chamar sua fun��o dentro do submit
+//mostrar o alerta dentro do submit, n�o dentro da fun��o
 
-document.addEventListener("DOMContentLoaded", function() {
+function salvarinformacoes(form) {
+    const nomeInput = form.querySelector('#nome') || form.querySelector('input');
+    const motivoInput = form.querySelector('#motivo') || form.querySelector('textarea');
 
-    const form = document.querySelector(".form-oracao");
+    const nome = nomeInput?.value || '';
+    const motivo = motivoInput?.value || '';
 
-    // Se o formulário não existir, o JS simplesmente não roda
-    if (!form) return;
+    const informacoes = {
+        nome: nome,
+        motivo: motivo
+    };
 
-    form.addEventListener("submit", function(event) {
-        event.preventDefault();
+    localStorage.setItem('informacoes', JSON.stringify(informacoes));
+}
 
-        salvarinformacoes();
+function inicializarFormulario() {
+    const form = document.querySelector('form.oracao') || document.querySelector('form');
 
-        alert("Informações salvas com sucesso!");
-    });
-
-    function salvarinformacoes () {
-        let nome = document.getElementById("nome").value;
-        let motivo = document.getElementById("motivo").value;
-
-        let informacoes = {
-            nome: nome,
-            motivo: motivo
-        };
-
-        localStorage.setItem("informacoes", JSON.stringify(informacoes));
+    if (!form) {
+        return;
     }
 
-});
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        salvarinformacoes(form);
+        alert('Informa��es salvas com sucesso!');
+    });
+}
 
-
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', inicializarFormulario);
+} else {
+    inicializarFormulario();
+}

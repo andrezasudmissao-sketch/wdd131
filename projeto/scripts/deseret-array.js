@@ -4,9 +4,9 @@
   titulo: "Oração",
   formulario: {
     campos: [
-      { label: "Compartilhe conosco: por quem devemos orar hoje?", tipo: "input" },
+      { label: "Seu nome", tipo: "input" },
       { label: "Motivo da oração", tipo: "textarea" },
-      { label: "Submeter Pedido de Oração", tipo: "button" }
+      { label: "Enviar", tipo: "button" }
     ]
   }
 };
