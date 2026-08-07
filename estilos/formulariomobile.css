@@ -13,6 +13,10 @@
       font-weight: bold; /*negrito*/
     }
 
+    form{
+        max-width: 100%;
+    }
+
     footer{
       text-align: center;
       
