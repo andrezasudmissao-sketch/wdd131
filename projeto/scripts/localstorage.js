@@ -3,6 +3,8 @@
 //chamar sua fun��o dentro do submit
 //mostrar o alerta dentro do submit, n�o dentro da fun��o
 
+consolo.log("script carregado")
+
 function salvarinformacoes(form) {
     const nomeInput = form.querySelector('#nome') || form.querySelector('input');
     const motivoInput = form.querySelector('#motivo') || form.querySelector('textarea');
