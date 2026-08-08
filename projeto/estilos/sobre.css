@@ -9,7 +9,7 @@
     justify-content:space-between; /* coloca espaço ENTRE os itens, empurrando o primeiro para a esquerda e o último para a direita.*/
     align-items: center;
     flex-direction: row-reverse; /*a imagem muda de lugar com o texto*/
-    gap: 20px;
+    gap: 10px;
     padding: 10px;
     background: #ffffff; /* fundo do retângulo */
     border-radius: 12px; /* cantos arredondados */
@@ -104,7 +104,21 @@ li a {
 
 
 
+/* ===========================
+   BOTÃO HAMBÚRGUER
+   =========================== */
+#hamburguer {
+    display: none;     /* Some no desktop */
+    font-size: 2rem;   /* Tamanho do ícone ☰ */
+    background: none;  /* Sem fundo */
+    border: none;      /* Sem borda */
+    color: #fff;       /* Ícone branco */
+    cursor: pointer;   /* Mãozinha ao passar o mouse */
+}
 
+#menu.show {
+  display: block;
+}
 
 
 /* o hover no CSS é aquele efeito que acontece quando o mouse passa por cima de um elemento.
