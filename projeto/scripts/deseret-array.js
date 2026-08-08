@@ -54,7 +54,8 @@ function createConjuntCard(conjunto) {
 
       // FIGURE
       const figure = document.createElement("figure");
-
+      
+      
       const img = document.createElement("img");
       img.src = item.imagem;
       img.alt = item.titulo;
@@ -69,6 +70,7 @@ function createConjuntCard(conjunto) {
 
       // FORMULÁRIO
       const form = document.createElement("form");
+
 
       item.formulario.campos.forEach(campo => {
         const label = document.createElement("label");

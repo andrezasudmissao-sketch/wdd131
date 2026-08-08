@@ -3,7 +3,7 @@
 //chamar sua fun��o dentro do submit
 //mostrar o alerta dentro do submit, n�o dentro da fun��o
 
-consolo.log("script carregado")
+console.log("script carregado")
 
 function salvarinformacoes(form) {
     const nomeInput = form.querySelector('#nome') || form.querySelector('input');
@@ -21,7 +21,7 @@ function salvarinformacoes(form) {
 }
 
 function inicializarFormulario() {
-    const form = document.querySelector('form.oracao') || document.querySelector('form');
+    const form = document.querySelector('oracao');
 
     if (!form) {
         return;
