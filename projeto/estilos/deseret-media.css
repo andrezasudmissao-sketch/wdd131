@@ -22,7 +22,7 @@
 
     }
     nav ul li a:hover { 
-       background: #a3a7a6; /* Fundo azul claro */
+       background: #a3a7a6; 
        border: 2px solid #000 ; /* A borda vai aparecer quando passar o mousse em cima do menu*/
        border-radius: 20px;  /* Bordas arredondadas */
        padding: 8px;        /* Espaçamento interno */
@@ -78,7 +78,7 @@
         box-sizing: border-box;
         display: grid;
         grid-template-columns: 1fr; /* Uma coluna */
-        gap: 5px; /* Espaço entre os itens */
+
         padding: 5px;
         text-align: center;
     }
